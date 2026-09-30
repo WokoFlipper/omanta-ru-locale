@@ -117,6 +117,9 @@ Dialog {
     component PrefRow: Rectangle {
         default property alias content: rowLayout.data
         property string label: ""
+        // Highlighted with the theme accent while hovered or focused, so the
+        // current row stays readable on any theme (plain Colors.border else).
+        readonly property bool highlighted: rowHover.hovered || rowLayout.activeFocus
 
         width: parent.width
         height: 52
@@ -124,8 +127,10 @@ Dialog {
         // The view tone on the chrome dialog, same as the location pill —
         // chrome-on-chrome made the cards invisible.
         color: Colors.window
-        border.color: Colors.border
-        border.width: 1
+        border.color: highlighted ? Colors.accent : Colors.border
+        border.width: highlighted ? 2 : 1
+
+        HoverHandler { id: rowHover }
 
         RowLayout {
             id: rowLayout
