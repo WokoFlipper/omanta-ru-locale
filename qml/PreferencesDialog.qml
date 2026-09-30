@@ -159,11 +159,33 @@ Dialog {
     }
 
     component PrefSwitch: Switch {
+        id: toggleRoot
         // Align the visible indicator with the dropdowns' right edge.
         padding: 0
         leftPadding: 12
         spacing: 0
         implicitHeight: 32
+        // Yellow on any theme: yellow track when on, yellow outline + knob
+        // when off. The default style disappears on some Omarchy themes.
+        indicator: Rectangle {
+            implicitWidth: 42
+            implicitHeight: 24
+            x: toggleRoot.leftPadding
+            y: parent.height / 2 - height / 2
+            radius: height / 2
+            color: toggleRoot.checked ? "#ffd60a" : "transparent"
+            border.color: "#ffd60a"
+            border.width: 2
+            Rectangle {
+                width: 16
+                height: 16
+                radius: 8
+                x: toggleRoot.checked ? parent.width - width - 4 : 4
+                y: (parent.height - height) / 2
+                color: toggleRoot.checked ? "#1c1c1c" : "#ffd60a"
+                Behavior on x { NumberAnimation { duration: 120 } }
+            }
+        }
     }
 
     component SectionTitle: Text {
