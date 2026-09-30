@@ -171,7 +171,7 @@ Rectangle {
                 anchors.verticalCenter: parent.verticalCenter
                 text: root.displayPlaceName(row.name)
                 color: row.current ? Colors.selectionText : row.mountable ? Colors.textDim : Colors.text
-                font.pixelSize: 16
+                font.pixelSize: 18
                 elide: Text.ElideRight
             }
 
