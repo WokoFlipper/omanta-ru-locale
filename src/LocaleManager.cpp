@@ -15,7 +15,9 @@ LocaleManager::LocaleManager(QQmlEngine *engine, QObject *parent)
 
 QStringList LocaleManager::availableLocales() const
 {
-    return { QString(), QStringLiteral("en"), QStringLiteral("ru") };
+    return { QString(), QStringLiteral("en"), QStringLiteral("ru"),
+             QStringLiteral("fr"), QStringLiteral("de"),
+             QStringLiteral("es") };
 }
 
 void LocaleManager::setLocale(const QString &code)
@@ -34,7 +36,18 @@ void LocaleManager::apply(const QString &code)
     QString target = code;
     if (target.isEmpty())
         target = QLocale::system().name(); // e.g. "ru_RU"
-    const QStringList candidates = { target, target.section(u'_', 0, 0) };
+    // The shipped files use full names (omanta_ru_RU.qm), while Preferences
+    // stores short codes ("ru"). Try both directions so either form resolves:
+    // "ru_RU" -> {"ru_RU", "ru"}, "ru" -> {"ru", "ru_RU"}.
+    QStringList candidates = { target };
+    const QString shortName = target.section(u'_', 0, 0);
+    if (shortName != target) {
+        candidates << shortName;
+    } else {
+        const QString fullName = shortName + u'_' + shortName.toUpper();
+        if (fullName != target)
+            candidates << fullName;
+    }
     const QStringList searchPaths = {
         QStringLiteral("/usr/share/omanta/translations"),
         QStringLiteral("/usr/local/share/omanta/translations"),

@@ -1,16 +1,16 @@
 <?xml version='1.0' encoding='utf-8'?>
-<TS version="2.1" language="ru_RU">
+<TS version="2.1" language="es_ES">
 <context>
     <name>AboutDialog</name>
     <message>
         <location filename="../qml/AboutDialog.qml" line="34" />
         <source>Files</source>
-        <translation>Файлы</translation>
+        <translation>Archivos</translation>
     </message>
     <message>
         <location filename="../qml/AboutDialog.qml" line="51" />
         <source>A native file manager for Omarchy.</source>
-        <translation>Нативный файловый менеджер для Omarchy.</translation>
+        <translation>Un gestor de archivos nativo para Omarchy.</translation>
     </message>
 </context>
 <context>
@@ -18,32 +18,32 @@
     <message>
         <location filename="../qml/BatchRenameDialog.qml" line="45" />
         <source>Cancel</source>
-        <translation>Отмена</translation>
+        <translation>Cancelar</translation>
     </message>
     <message>
         <location filename="../qml/BatchRenameDialog.qml" line="50" />
         <source>Rename</source>
-        <translation>Переименовать</translation>
+        <translation>Renombrar</translation>
     </message>
     <message>
         <location filename="../qml/BatchRenameDialog.qml" line="64" />
         <source>Rename %1 Files</source>
-        <translation>Переименовать файлов: %1</translation>
+        <translation>Renombrar %1 archivos</translation>
     </message>
     <message>
         <location filename="../qml/BatchRenameDialog.qml" line="78" />
         <source>Rename using a template</source>
-        <translation>Переименование по шаблону</translation>
+        <translation>Renombrar con una plantilla</translation>
     </message>
     <message>
         <location filename="../qml/BatchRenameDialog.qml" line="83" />
         <source>Find and replace text</source>
-        <translation>Найти и заменить текст</translation>
+        <translation>Buscar y reemplazar texto</translation>
     </message>
     <message>
         <location filename="../qml/BatchRenameDialog.qml" line="109" />
         <source>+ Add</source>
-        <translation>+ Добавить</translation>
+        <translation>+ Añadir</translation>
     </message>
     <message>
         <location filename="../qml/BatchRenameDialog.qml" line="125" />
@@ -63,42 +63,42 @@
     <message>
         <location filename="../qml/BatchRenameDialog.qml" line="138" />
         <source>Original File Name</source>
-        <translation>Исходное имя файла</translation>
+        <translation>Nombre de archivo original</translation>
     </message>
     <message>
         <location filename="../qml/BatchRenameDialog.qml" line="151" />
         <source>Automatic Numbering Order</source>
-        <translation>Автоматическая нумерация</translation>
+        <translation>Numeración automática</translation>
     </message>
     <message>
         <location filename="../qml/BatchRenameDialog.qml" line="161" />
         <source>Original Name (Ascending)</source>
-        <translation>Исходное имя (по возрастанию)</translation>
+        <translation>Nombre original (ascendente)</translation>
     </message>
     <message>
         <location filename="../qml/BatchRenameDialog.qml" line="162" />
         <source>Original Name (Descending)</source>
-        <translation>Исходное имя (по убыванию)</translation>
+        <translation>Nombre original (descendente)</translation>
     </message>
     <message>
         <location filename="../qml/BatchRenameDialog.qml" line="163" />
         <source>First Modified</source>
-        <translation>По дате изменения (сначала старые)</translation>
+        <translation>Más antiguos primero</translation>
     </message>
     <message>
         <location filename="../qml/BatchRenameDialog.qml" line="164" />
         <source>Last Modified</source>
-        <translation>По дате изменения (сначала новые)</translation>
+        <translation>Más recientes primero</translation>
     </message>
     <message>
         <location filename="../qml/BatchRenameDialog.qml" line="198" />
         <source>Existing Text</source>
-        <translation>Имеющийся текст</translation>
+        <translation>Texto existente</translation>
     </message>
     <message>
         <location filename="../qml/BatchRenameDialog.qml" line="213" />
         <source>Replace With</source>
-        <translation>Заменить на</translation>
+        <translation>Reemplazar por</translation>
     </message>
 </context>
 <context>
@@ -106,12 +106,12 @@
     <message>
         <location filename="../src/BatchRenamer.cpp" line="236" />
         <source>File names cannot be empty or contain “/”</source>
-        <translation>Имена файлов не могут быть пустыми или содержать “/”</translation>
+        <translation>Los nombres de archivo no pueden estar vacíos ni contener “/”</translation>
     </message>
     <message>
         <location filename="../src/BatchRenamer.cpp" line="238" />
         <source>File names must be unique</source>
-        <translation>Имена файлов должны быть уникальными</translation>
+        <translation>Los nombres de archivo deben ser únicos</translation>
     </message>
 </context>
 <context>
@@ -124,7 +124,7 @@
     <message>
         <location filename="../qml/CompressDialog.qml" line="23" />
         <source>Compatible with all operating systems.</source>
-        <translation>Совместимо со всеми операционными системами.</translation>
+        <translation>Compatible con todos los sistemas operativos.</translation>
     </message>
     <message>
         <location filename="../qml/CompressDialog.qml" line="24" />
@@ -134,7 +134,7 @@
     <message>
         <location filename="../qml/CompressDialog.qml" line="25" />
         <source>Smaller archives but Linux and Mac only.</source>
-        <translation>Меньший размер, но только Linux и Mac.</translation>
+        <translation>Archivos más pequeños, pero solo Linux y Mac.</translation>
     </message>
     <message>
         <location filename="../qml/CompressDialog.qml" line="26" />
@@ -144,62 +144,62 @@
     <message>
         <location filename="../qml/CompressDialog.qml" line="27" />
         <source>Smaller archives but must be installed on Windows and Mac.</source>
-        <translation>Меньший размер, но в Windows и Mac нужны дополнительные программы.</translation>
+        <translation>Archivos más pequeños, pero en Windows y Mac se necesita software adicional.</translation>
     </message>
     <message>
         <location filename="../qml/CompressDialog.qml" line="28" />
         <source>Encrypted ZIP (.zip)</source>
-        <translation>Зашифрованный ZIP (.zip)</translation>
+        <translation>ZIP cifrado (.zip)</translation>
     </message>
     <message>
         <location filename="../qml/CompressDialog.qml" line="29" />
         <source>Password-protected. Compatible with all operating systems.</source>
-        <translation>С защитой паролем. Совместимо со всеми операционными системами.</translation>
+        <translation>Protegido con contraseña. Compatible con todos los sistemas operativos.</translation>
     </message>
     <message>
         <location filename="../qml/CompressDialog.qml" line="40" />
         <source>File names cannot contain “/”</source>
-        <translation>Имена файлов не могут содержать “/”</translation>
+        <translation>Los nombres de archivo no pueden contener “/”</translation>
     </message>
     <message>
         <location filename="../qml/CompressDialog.qml" line="42" />
         <source>“%1” already exists</source>
-        <translation>“%1” уже существует</translation>
+        <translation>“%1” ya existe</translation>
     </message>
     <message>
         <location filename="../qml/CompressDialog.qml" line="75" />
         <source>Cancel</source>
-        <translation>Отмена</translation>
+        <translation>Cancelar</translation>
     </message>
     <message>
         <location filename="../qml/CompressDialog.qml" line="80" />
         <source>Compress</source>
-        <translation>Сжать</translation>
+        <translation>Comprimir</translation>
     </message>
     <message>
         <location filename="../qml/CompressDialog.qml" line="94" />
         <source>Compress Files and Folders</source>
-        <translation>Сжать файлы и папки</translation>
+        <translation>Comprimir archivos y carpetas</translation>
     </message>
     <message>
         <location filename="../qml/CompressDialog.qml" line="106" />
         <source>Archive Name</source>
-        <translation>Имя архива</translation>
+        <translation>Nombre del archivo</translation>
     </message>
     <message>
         <location filename="../qml/CompressDialog.qml" line="120" />
         <source>archive</source>
-        <translation>архив</translation>
+        <translation>archivo</translation>
     </message>
     <message>
         <location filename="../qml/CompressDialog.qml" line="141" />
         <source>Compression Method</source>
-        <translation>Способ сжатия</translation>
+        <translation>Método de compresión</translation>
     </message>
     <message>
         <location filename="../qml/CompressDialog.qml" line="177" />
         <source>Password</source>
-        <translation>Пароль</translation>
+        <translation>Contraseña</translation>
     </message>
 </context>
 <context>
@@ -207,7 +207,7 @@
     <message>
         <location filename="../qml/ConfirmDialog.qml" line="22" />
         <source>Cancel</source>
-        <translation>Отмена</translation>
+        <translation>Cancelar</translation>
     </message>
 </context>
 <context>
@@ -215,32 +215,32 @@
     <message>
         <location filename="../qml/ConflictDialog.qml" line="28" />
         <source>Keep both</source>
-        <translation>Оставить оба</translation>
+        <translation>Conservar ambos</translation>
     </message>
     <message>
         <location filename="../qml/ConflictDialog.qml" line="33" />
         <source>Skip</source>
-        <translation>Пропустить</translation>
+        <translation>Omitir</translation>
     </message>
     <message>
         <location filename="../qml/ConflictDialog.qml" line="38" />
         <source>Replace</source>
-        <translation>Заменить</translation>
+        <translation>Reemplazar</translation>
     </message>
     <message>
         <location filename="../qml/ConflictDialog.qml" line="52" />
         <source>“%1” already exists here.</source>
-        <translation>“%1” уже существует здесь.</translation>
+        <translation>“%1” ya existe aquí.</translation>
     </message>
     <message>
         <location filename="../qml/ConflictDialog.qml" line="53" />
         <source>%1 items already exist here.</source>
-        <translation>Здесь уже существует элементов: %1.</translation>
+        <translation>%1 elementos ya existen aquí.</translation>
     </message>
     <message>
         <location filename="../qml/ConflictDialog.qml" line="73" />
         <source>Replacing cannot be undone.</source>
-        <translation>Замену нельзя отменить.</translation>
+        <translation>El reemplazo no se puede deshacer.</translation>
     </message>
 </context>
 <context>
@@ -248,32 +248,32 @@
     <message>
         <location filename="../qml/CredentialDialog.qml" line="25" />
         <source>Authentication required</source>
-        <translation>Требуется вход</translation>
+        <translation>Autenticación requerida</translation>
     </message>
     <message>
         <location filename="../qml/CredentialDialog.qml" line="68" />
         <source>Connect anonymously</source>
-        <translation>Подключиться анонимно</translation>
+        <translation>Conectar de forma anónima</translation>
     </message>
     <message>
         <location filename="../qml/CredentialDialog.qml" line="77" />
         <source>Username</source>
-        <translation>Имя пользователя</translation>
+        <translation>Nombre de usuario</translation>
     </message>
     <message>
         <location filename="../qml/CredentialDialog.qml" line="88" />
         <source>Domain</source>
-        <translation>Домен</translation>
+        <translation>Dominio</translation>
     </message>
     <message>
         <location filename="../qml/CredentialDialog.qml" line="99" />
         <source>Password</source>
-        <translation>Пароль</translation>
+        <translation>Contraseña</translation>
     </message>
     <message>
         <location filename="../qml/CredentialDialog.qml" line="111" />
         <source>Remember password</source>
-        <translation>Запомнить пароль</translation>
+        <translation>Recordar contraseña</translation>
     </message>
 </context>
 <context>
@@ -281,12 +281,12 @@
     <message>
         <location filename="../src/DefaultFileManager.cpp" line="102" />
         <source>omanta-switch %1 failed</source>
-        <translation>omanta-switch %1: ошибка</translation>
+        <translation>omanta-switch %1 ha fallado</translation>
     </message>
     <message>
         <location filename="../src/DefaultFileManager.cpp" line="120" />
         <source>Could not run omanta-switch</source>
-        <translation>Не удалось запустить omanta-switch</translation>
+        <translation>No se pudo ejecutar omanta-switch</translation>
     </message>
 </context>
 <context>
@@ -294,7 +294,7 @@
     <message>
         <location filename="../qml/DialogCloseButton.qml" line="21" />
         <source>Close</source>
-        <translation>Закрыть</translation>
+        <translation>Cerrar</translation>
     </message>
 </context>
 <context>
@@ -302,7 +302,7 @@
     <message>
         <location filename="../qml/FileDrag.qml" line="145" />
         <source>%1 items</source>
-        <translation>Элементов: %1</translation>
+        <translation>%1 elementos</translation>
     </message>
 </context>
 <context>
@@ -310,47 +310,47 @@
     <message>
         <location filename="../qml/FileListView.qml" line="19" />
         <source>Name</source>
-        <translation>Имя</translation>
+        <translation>Nombre</translation>
     </message>
     <message>
         <location filename="../qml/FileListView.qml" line="20" />
         <source>Size</source>
-        <translation>Размер</translation>
+        <translation>Tamaño</translation>
     </message>
     <message>
         <location filename="../qml/FileListView.qml" line="21" />
         <source>Type</source>
-        <translation>Тип</translation>
+        <translation>Tipo</translation>
     </message>
     <message>
         <location filename="../qml/FileListView.qml" line="22" />
         <source>Owner</source>
-        <translation>Владелец</translation>
+        <translation>Propietario</translation>
     </message>
     <message>
         <location filename="../qml/FileListView.qml" line="23" />
         <source>Group</source>
-        <translation>Группа</translation>
+        <translation>Grupo</translation>
     </message>
     <message>
         <location filename="../qml/FileListView.qml" line="24" />
         <source>Permissions</source>
-        <translation>Права</translation>
+        <translation>Permisos</translation>
     </message>
     <message>
         <location filename="../qml/FileListView.qml" line="25" />
         <source>Modified</source>
-        <translation>Изменён</translation>
+        <translation>Modificado</translation>
     </message>
     <message>
         <location filename="../qml/FileListView.qml" line="26" />
         <source>Created</source>
-        <translation>Создан</translation>
+        <translation>Creado</translation>
     </message>
     <message>
         <location filename="../qml/FileListView.qml" line="27" />
         <source>Accessed</source>
-        <translation>Доступ</translation>
+        <translation>Acceso</translation>
     </message>
 </context>
 <context>
@@ -358,22 +358,22 @@
     <message>
         <location filename="../qml/FolderPickerDialog.qml" line="12" />
         <source>Select</source>
-        <translation>Выбрать</translation>
+        <translation>Seleccionar</translation>
     </message>
     <message>
         <location filename="../qml/FolderPickerDialog.qml" line="64" />
         <source>Cancel</source>
-        <translation>Отмена</translation>
+        <translation>Cancelar</translation>
     </message>
     <message>
         <location filename="../qml/FolderPickerDialog.qml" line="98" />
         <source>Parent folder</source>
-        <translation>Родительская папка</translation>
+        <translation>Carpeta superior</translation>
     </message>
     <message>
         <location filename="../qml/FolderPickerDialog.qml" line="145" />
         <source>No folders here</source>
-        <translation>Здесь нет папок</translation>
+        <translation>No hay carpetas aquí</translation>
     </message>
 </context>
 <context>
@@ -381,27 +381,27 @@
     <message>
         <location filename="../src/Location.cpp" line="19" />
         <source>Trash</source>
-        <translation>Корзина</translation>
+        <translation>Papelera</translation>
     </message>
     <message>
         <location filename="../src/Location.cpp" line="21" />
         <source>Starred</source>
-        <translation>Избранное</translation>
+        <translation>Destacados</translation>
     </message>
     <message>
         <location filename="../src/Location.cpp" line="23" />
         <source>Recent</source>
-        <translation>Недавние</translation>
+        <translation>Recientes</translation>
     </message>
     <message>
         <location filename="../src/Location.cpp" line="25" />
         <source>Network</source>
-        <translation>Сеть</translation>
+        <translation>Red</translation>
     </message>
     <message>
         <location filename="../src/Location.cpp" line="27" />
         <source>Computer</source>
-        <translation>Компьютер</translation>
+        <translation>Equipo</translation>
     </message>
 </context>
 <context>
@@ -409,133 +409,133 @@
     <message>
         <location filename="../qml/Main.qml" line="229" />
         <source>Show Sidebar (F9)</source>
-        <translation>Показать боковую панель (F9)</translation>
+        <translation>Mostrar la barra lateral (F9)</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="236" />
         <source>Search (Ctrl+F)</source>
-        <translation>Поиск (Ctrl+F)</translation>
+        <translation>Buscar (Ctrl+F)</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="246" />
         <source>Files</source>
-        <translation>Файлы</translation>
+        <translation>Archivos</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="255" />
         <source>Main menu</source>
-        <translation>Главное меню</translation>
+        <translation>Menú principal</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="262" />
         <source>Back (Alt+Left)</source>
-        <translation>Назад (Alt+Left)</translation>
+        <translation>Atrás (Alt+Izquierda)</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="269" />
         <source>Forward (Alt+Right)</source>
-        <translation>Вперёд (Alt+Right)</translation>
+        <translation>Adelante (Alt+Derecha)</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="326" />
         <source>Search current folder</source>
-        <translation>Искать в текущей папке</translation>
+        <translation>Buscar en la carpeta actual</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="344" />
         <source>searching…</source>
-        <translation>поиск…</translation>
+        <translation>buscando…</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="366" />
         <source>Contents</source>
-        <translation>Содержимое</translation>
+        <translation>Contenido</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="380" />
         <source>Search file contents (Ctrl+Shift+F)</source>
-        <translation>Искать в содержимом файлов (Ctrl+Shift+F)</translation>
+        <translation>Buscar en el contenido (Ctrl+Mayús+F)</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="404" />
         <source>Filters</source>
-        <translation>Фильтры</translation>
+        <translation>Filtros</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="419" />
         <source>Filter by date and file type</source>
-        <translation>Фильтр по дате и типу файлов</translation>
+        <translation>Filtrar por fecha y tipo</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="453" />
         <source>Any time</source>
-        <translation>Любое время</translation>
+        <translation>Cualquier momento</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="453" />
         <source>Today</source>
-        <translation>Сегодня</translation>
+        <translation>Hoy</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="453" />
         <source>Since yesterday</source>
-        <translation>Со вчерашнего дня</translation>
+        <translation>Desde ayer</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="454" />
         <source>Last 7 days</source>
-        <translation>Последние 7 дней</translation>
+        <translation>Últimos 7 días</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="454" />
         <source>Last 30 days</source>
-        <translation>Последние 30 дней</translation>
+        <translation>Últimos 30 días</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="454" />
         <source>Last year</source>
-        <translation>Последний год</translation>
+        <translation>Último año</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="458" />
         <location filename="../qml/Main.qml" line="1563" />
         <source>Last Modified</source>
-        <translation>Последнее изменение</translation>
+        <translation>Última modificación</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="458" />
         <source>Created</source>
-        <translation>Создание</translation>
+        <translation>Creación</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="458" />
         <source>Last Used</source>
-        <translation>Последнее использование</translation>
+        <translation>Último uso</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="464" />
         <source>Anything</source>
-        <translation>Всё</translation>
+        <translation>Todo</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="464" />
         <source>Folders</source>
-        <translation>Папки</translation>
+        <translation>Carpetas</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="464" />
         <source>Documents</source>
-        <translation>Документы</translation>
+        <translation>Documentos</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="465" />
         <source>Illustration</source>
-        <translation>Иллюстрации</translation>
+        <translation>Ilustraciones</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="465" />
         <source>Music</source>
-        <translation>Музыка</translation>
+        <translation>Música</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="465" />
@@ -545,84 +545,94 @@
     <message>
         <location filename="../qml/Main.qml" line="466" />
         <source>Pictures</source>
-        <translation>Изображения</translation>
+        <translation>Imágenes</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="466" />
         <source>Presentations</source>
-        <translation>Презентации</translation>
+        <translation>Presentaciones</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="466" />
         <source>Spreadsheets</source>
-        <translation>Таблицы</translation>
+        <translation>Hojas de cálculo</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="467" />
         <source>Text Files</source>
-        <translation>Текстовые файлы</translation>
+        <translation>Archivos de texto</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="467" />
         <source>Videos</source>
-        <translation>Видео</translation>
+        <translation>Vídeos</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="474" />
         <source>When</source>
-        <translation>Когда</translation>
+        <translation>Cuándo</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="503" />
         <source>What</source>
-        <translation>Что</translation>
+        <translation>Qué</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="527" />
         <source>Switch view (Ctrl+1 / Ctrl+2)</source>
-        <translation>Переключить вид (Ctrl+1 / Ctrl+2)</translation>
+        <translation>Cambiar vista (Ctrl+1 / Ctrl+2)</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="679" />
         <source>Could not mount “%1”: %2</source>
-        <translation>Не удалось подключить “%1”: %2</translation>
+        <translation>No se pudo montar “%1”: %2</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="739" />
         <source>Space previews need Sushi — install the sushi package</source>
-        <translation>Предпросмотр по пробелу требует Sushi — установите пакет sushi</translation>
+        <translation>La vista previa con Espacio necesita Sushi — instale el paquete sushi</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="775" />
         <source>Server address</source>
-        <translation>Адрес сервера</translation>
+        <translation>Dirección del servidor</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="781" />
         <source>Connect</source>
-        <translation>Подключить</translation>
+        <translation>Conectar</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="810" />
         <source>Server Addresses</source>
-        <translation>Адреса серверов</translation>
+        <translation>Direcciones de servidor</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="819" />
         <source>Server addresses are made up of a protocol prefix and an address. Examples:</source>
-        <translation>Адрес сервера состоит из префикса протокола и адреса. Примеры:</translation>
+        <translation>Una dirección de servidor se compone de un prefijo de protocolo y una dirección. Ejemplos:</translation>
+    </message>
+    <message>
+        <location filename="../qml/Main.qml" line="841" />
+        <source>Available Protocols</source>
+        <translation>Protocolos disponibles</translation>
+    </message>
+    <message>
+        <location filename="../qml/Main.qml" line="848" />
+        <source>Prefix</source>
+        <translation>Prefijo</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="924" />
         <source>Cancel</source>
-        <translation>Отмена</translation>
+        <translation>Cancelar</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="994" />
         <location filename="../qml/Main.qml" line="1775" />
         <location filename="../qml/Main.qml" line="1876" />
         <source>New Folder</source>
-        <translation>Новая папка</translation>
+        <translation>Nueva carpeta</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="1061" />
@@ -632,12 +642,12 @@
     <message>
         <location filename="../qml/Main.qml" line="1062" />
         <source>File Transfer Protocol</source>
-        <translation>Протокол передачи файлов</translation>
+        <translation>Protocolo de transferencia de archivos</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="1064" />
         <source>Network File System</source>
-        <translation>Сетевая файловая система</translation>
+        <translation>Sistema de archivos de red</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="1065" />
@@ -647,7 +657,7 @@
     <message>
         <location filename="../qml/Main.qml" line="1066" />
         <source>SSH File Transfer Protocol</source>
-        <translation>Протокол передачи файлов SSH</translation>
+        <translation>Protocolo de transferencia SSH</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="1068" />
@@ -657,329 +667,315 @@
     <message>
         <location filename="../qml/Main.qml" line="1093" />
         <source>Addresses need a protocol prefix — smb://, sftp://, ftp://…</source>
-        <translation>Адресу нужен префикс протокола — smb://, sftp://, ftp://…</translation>
+        <translation>Las direcciones necesitan un prefijo de protocolo — smb://, sftp://, ftp://…</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="1124" />
         <source>%1 archives</source>
-        <translation>Архивов: %1</translation>
+        <translation>%1 archivos</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="1125" />
         <source>Extract %1 to:</source>
-        <translation>Распаковать %1 в:</translation>
+        <translation>Extraer %1 en:</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="1151" />
         <source>Permanently delete “%1”?</source>
-        <translation>Удалить “%1” навсегда?</translation>
+        <translation>¿Eliminar “%1” definitivamente?</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="1152" />
         <source>Permanently delete %1 items?</source>
-        <translation>Удалить элементов навсегда: %1?</translation>
+        <translation>¿Eliminar %1 elementos definitivamente?</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="1153" />
         <source>This cannot be undone.</source>
-        <translation>Это действие нельзя отменить.</translation>
+        <translation>Esto no se puede deshacer.</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="1199" />
         <source>Name for the new folder</source>
-        <translation>Имя новой папки</translation>
+        <translation>Nombre para la nueva carpeta</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="1207" />
         <source>New name</source>
-        <translation>Новое имя</translation>
+        <translation>Nuevo nombre</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="1216" />
         <source>Delete</source>
-        <translation>Удалить</translation>
+        <translation>Eliminar</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="1223" />
         <source>Empty the trash?</source>
-        <translation>Очистить корзину?</translation>
+        <translation>¿Vaciar la papelera?</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="1224" />
         <source>Everything in the trash will be permanently deleted. This cannot be undone.</source>
-        <translation>Всё содержимое корзины будет удалено навсегда. Это действие нельзя отменить.</translation>
+        <translation>Todo en la papelera se eliminará definitivamente. Esto no se puede deshacer.</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="1225" />
         <source>Empty Trash</source>
-        <translation>Очистить корзину</translation>
+        <translation>Vaciar la papelera</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="1255" />
         <source>Extract</source>
-        <translation>Распаковать</translation>
+        <translation>Extraer</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="1274" />
         <source>“%1” is password-protected. Enter the password:</source>
-        <translation>“%1” защищён паролем. Введите пароль:</translation>
+        <translation>“%1” está protegido con contraseña. Introduzca la contraseña:</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="1305" />
         <source>Could not mount: %1</source>
-        <translation>Не удалось подключить: %1</translation>
+        <translation>No se pudo montar: %1</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="1330" />
         <source>Server verification</source>
-        <translation>Проверка сервера</translation>
+        <translation>Verificación del servidor</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="1394" />
         <source>These files can't be moved to the trash.</source>
-        <translation>Эти файлы нельзя переместить в корзину.</translation>
+        <translation>Estos archivos no se pueden mover a la papelera.</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="1395" />
         <source>This location has no trash. Delete them permanently instead?</source>
-        <translation>В этом расположении нет корзины. Удалить их навсегда?</translation>
+        <translation>Esta ubicación no tiene papelera. ¿Eliminarlos definitivamente?</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="1396" />
         <source>Delete permanently</source>
-        <translation>Удалить навсегда</translation>
+        <translation>Eliminar definitivamente</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="1416" />
         <source>New Window</source>
-        <translation>Новое окно</translation>
+        <translation>Nueva ventana</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="1421" />
         <source>New Tab</source>
-        <translation>Новая вкладка</translation>
+        <translation>Nueva pestaña</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="1428" />
         <source>Undo</source>
-        <translation>Отменить</translation>
+        <translation>Deshacer</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="1434" />
         <source>Redo</source>
-        <translation>Вернуть</translation>
+        <translation>Rehacer</translation>
+    </message>
+    <message>
+        <location filename="../qml/Main.qml" line="1442" />
+        <source>Preferences</source>
+        <translation>Preferencias</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="1447" />
         <source>Keyboard Shortcuts</source>
-        <translation>Горячие клавиши</translation>
+        <translation>Atajos de teclado</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="1452" />
         <source>About Files</source>
-        <translation>О программе «Файлы»</translation>
+        <translation>Acerca de Archivos</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="1522" />
         <source>Icon Size</source>
-        <translation>Размер значков</translation>
+        <translation>Tamaño de los iconos</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="1545" />
         <source>Sort</source>
-        <translation>Сортировка</translation>
+        <translation>Ordenar</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="1549" />
         <source>A-Z</source>
-        <translation>А–Я</translation>
+        <translation>A-Z</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="1556" />
         <source>Z-A</source>
-        <translation>Я–А</translation>
+        <translation>Z-A</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="1570" />
         <source>First Modified</source>
-        <translation>По дате изменения (сначала старые)</translation>
+        <translation>Más antiguos primero</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="1577" />
         <source>Size</source>
-        <translation>Размер</translation>
+        <translation>Tamaño</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="1584" />
         <source>Type</source>
-        <translation>Тип</translation>
+        <translation>Tipo</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="1595" />
         <source>Visible Columns…</source>
-        <translation>Видимые столбцы…</translation>
+        <translation>Columnas visibles…</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="1605" />
         <source>Show Hidden Files</source>
-        <translation>Показывать скрытые файлы</translation>
+        <translation>Mostrar archivos ocultos</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="1615" />
         <source>Show Sidebar</source>
-        <translation>Показать боковую панель</translation>
+        <translation>Mostrar la barra lateral</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="1647" />
         <source>New Folder…</source>
-        <translation>Новая папка…</translation>
+        <translation>Nueva carpeta…</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="1653" />
         <source>Open With…</source>
-        <translation>Открыть с помощью…</translation>
+        <translation>Abrir con…</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="1664" />
         <source>Reload</source>
-        <translation>Обновить</translation>
+        <translation>Recargar</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="1670" />
         <source>Copy Location</source>
-        <translation>Копировать путь</translation>
+        <translation>Copiar ubicación</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="1678" />
         <location filename="../qml/Main.qml" line="1857" />
         <source>Paste</source>
-        <translation>Вставить</translation>
+        <translation>Pegar</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="1684" />
         <source>Paste as Link</source>
-        <translation>Вставить как ссылку</translation>
+        <translation>Pegar como enlace</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="1691" />
         <source>Select All</source>
-        <translation>Выбрать всё</translation>
+        <translation>Seleccionar todo</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="1699" />
         <location filename="../qml/Main.qml" line="1962" />
         <source>Properties</source>
-        <translation>Свойства</translation>
+        <translation>Propiedades</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="1709" />
         <location filename="../qml/Main.qml" line="2007" />
         <source>New Document</source>
-        <translation>Новый документ</translation>
+        <translation>Nuevo documento</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="1792" />
         <source>Preview</source>
-        <translation>Предпросмотр</translation>
+        <translation>Vista previa</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="1819" />
         <source>Remove Bookmark</source>
-        <translation>Убрать закладку</translation>
+        <translation>Quitar marcador</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="1819" />
         <source>Bookmark This Folder</source>
-        <translation>Добавить папку в закладки</translation>
+        <translation>Añadir esta carpeta a marcadores</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="1827" />
         <source>Unstar</source>
-        <translation>Снять отметку</translation>
+        <translation>Quitar de destacados</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="1827" />
         <source>Star</source>
-        <translation>Отметить</translation>
+        <translation>Destacar</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="1845" />
         <source>Cut</source>
-        <translation>Вырезать</translation>
+        <translation>Cortar</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="1851" />
         <source>Copy</source>
-        <translation>Копировать</translation>
+        <translation>Copiar</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="1865" />
         <source>Create Link</source>
-        <translation>Создать ссылку</translation>
+        <translation>Crear enlace</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="1882" />
         <source>Rename…</source>
-        <translation>Переименовать…</translation>
+        <translation>Renombrar…</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="1893" />
         <source>Compress…</source>
-        <translation>Сжать…</translation>
+        <translation>Comprimir…</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="1900" />
         <source>Extract Here</source>
-        <translation>Распаковать здесь</translation>
+        <translation>Extraer aquí</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="1907" />
         <source>Extract to…</source>
-        <translation>Распаковать в…</translation>
+        <translation>Extraer en…</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="1917" />
         <source>Forget Connection</source>
-        <translation>Забыть подключение</translation>
+        <translation>Olvidar conexión</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="1925" />
         <source>Restore from Trash</source>
-        <translation>Восстановить из корзины</translation>
+        <translation>Restaurar desde la papelera</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="1933" />
         <source>Empty Trash…</source>
-        <translation>Очистить корзину…</translation>
+        <translation>Vaciar la papelera…</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="1941" />
         <source>Move to Trash</source>
-        <translation>Переместить в корзину</translation>
+        <translation>Mover a la papelera</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="1949" />
         <source>Delete Permanently…</source>
-        <translation>Удалить навсегда…</translation>
-    </message>
-    <message>
-        <location filename="../qml/Main.qml" line="1442" />
-        <source>Preferences</source>
-        <translation>Настройки</translation>
-    </message>
-    <message>
-        <source>Default File Manager</source>
-        <translation type="vanished">Файловый менеджер по умолчанию</translation>
-    </message>
-    <message>
-        <location filename="../qml/Main.qml" line="841" />
-        <source>Available Protocols</source>
-        <translation>Доступные протоколы</translation>
-    </message>
-    <message>
-        <location filename="../qml/Main.qml" line="848" />
-        <source>Prefix</source>
-        <translation>Префикс</translation>
+        <translation>Eliminar definitivamente…</translation>
     </message>
 </context>
 <context>
@@ -987,26 +983,25 @@
     <message>
         <location filename="../src/Platform.cpp" line="153" />
         <source>Today, %1</source>
-        <translation>Сегодня, %1</translation>
+        <translation>Hoy, %1</translation>
     </message>
     <message>
         <location filename="../src/Platform.cpp" line="156" />
         <source>Yesterday</source>
-        <translation>Вчера</translation>
+        <translation>Ayer</translation>
     </message>
     <message numerus="yes">
         <location filename="../src/Platform.cpp" line="158" />
         <source>%n days ago</source>
         <translation>
-            <numerusform>день назад</numerusform>
-            <numerusform>дня назад</numerusform>
-            <numerusform>дней назад</numerusform>
+            <numerusform>hace %n día</numerusform>
+            <numerusform>hace %n días</numerusform>
         </translation>
     </message>
     <message>
         <location filename="../src/Platform.cpp" line="367" />
         <source>Home</source>
-        <translation>Домашняя</translation>
+        <translation>Personal</translation>
     </message>
 </context>
 <context>
@@ -1014,267 +1009,267 @@
     <message>
         <location filename="../qml/PreferencesDialog.qml" line="25" />
         <source>Preferences</source>
-        <translation>Настройки</translation>
+        <translation>Preferencias</translation>
     </message>
     <message>
         <location filename="../qml/PreferencesDialog.qml" line="95" />
         <source>None</source>
-        <translation>Нет</translation>
+        <translation>Ninguno</translation>
     </message>
     <message>
         <location filename="../qml/PreferencesDialog.qml" line="95" />
         <source>Size</source>
-        <translation>Размер</translation>
+        <translation>Tamaño</translation>
     </message>
     <message>
         <location filename="../qml/PreferencesDialog.qml" line="95" />
         <source>Type</source>
-        <translation>Тип</translation>
+        <translation>Tipo</translation>
     </message>
     <message>
         <location filename="../qml/PreferencesDialog.qml" line="96" />
         <source>Owner</source>
-        <translation>Владелец</translation>
+        <translation>Propietario</translation>
     </message>
     <message>
         <location filename="../qml/PreferencesDialog.qml" line="96" />
         <source>Group</source>
-        <translation>Группа</translation>
+        <translation>Grupo</translation>
     </message>
     <message>
         <location filename="../qml/PreferencesDialog.qml" line="96" />
         <source>Permissions</source>
-        <translation>Права</translation>
+        <translation>Permisos</translation>
     </message>
     <message>
         <location filename="../qml/PreferencesDialog.qml" line="97" />
         <source>Modified</source>
-        <translation>Изменён</translation>
+        <translation>Modificado</translation>
     </message>
     <message>
         <location filename="../qml/PreferencesDialog.qml" line="97" />
         <source>Created</source>
-        <translation>Создан</translation>
+        <translation>Creado</translation>
     </message>
     <message>
         <location filename="../qml/PreferencesDialog.qml" line="97" />
         <source>Accessed</source>
-        <translation>Доступ</translation>
+        <translation>Acceso</translation>
     </message>
     <message>
         <location filename="../qml/PreferencesDialog.qml" line="110" />
         <source>On This Device Only</source>
-        <translation>Только на этом устройстве</translation>
+        <translation>Solo en este dispositivo</translation>
     </message>
     <message>
         <location filename="../qml/PreferencesDialog.qml" line="110" />
         <source>All Locations</source>
-        <translation>Везде</translation>
+        <translation>En todas partes</translation>
     </message>
     <message>
         <location filename="../qml/PreferencesDialog.qml" line="110" />
         <source>Never</source>
-        <translation>Никогда</translation>
+        <translation>Nunca</translation>
     </message>
     <message>
         <location filename="../qml/PreferencesDialog.qml" line="199" />
         <source>General</source>
-        <translation>Общие</translation>
+        <translation>General</translation>
     </message>
     <message>
         <location filename="../qml/PreferencesDialog.qml" line="202" />
         <source>Sort Folders Before Files</source>
-        <translation>Сначала папки, потом файлы</translation>
+        <translation>Ordenar las carpetas antes que los archivos</translation>
     </message>
     <message>
         <location filename="../qml/PreferencesDialog.qml" line="210" />
         <source>Show Hidden Files</source>
-        <translation>Показывать скрытые файлы</translation>
+        <translation>Mostrar archivos ocultos</translation>
     </message>
     <message>
         <location filename="../qml/PreferencesDialog.qml" line="218" />
         <source>Action to Open Items</source>
-        <translation>Открытие элементов</translation>
+        <translation>Apertura de elementos</translation>
     </message>
     <message>
         <location filename="../qml/PreferencesDialog.qml" line="221" />
         <source>Double-Click</source>
-        <translation>Двойной щелчок</translation>
+        <translation>Doble clic</translation>
     </message>
     <message>
         <location filename="../qml/PreferencesDialog.qml" line="221" />
         <source>Single-Click</source>
-        <translation>Одинарный щелчок</translation>
+        <translation>Clic simple</translation>
     </message>
     <message>
         <location filename="../qml/PreferencesDialog.qml" line="227" />
         <source>Expandable Folders in List View</source>
-        <translation>Раскрываемые папки в виде списка</translation>
+        <translation>Carpetas expandibles en vista de lista</translation>
     </message>
     <message>
         <location filename="../qml/PreferencesDialog.qml" line="235" />
         <source>Interface Language</source>
-        <translation>Язык интерфейса</translation>
+        <translation>Idioma de la interfaz</translation>
     </message>
     <message>
         <location filename="../qml/PreferencesDialog.qml" line="241" />
         <source>System default</source>
-        <translation>Системный по умолчанию</translation>
+        <translation>Predeterminado del sistema</translation>
     </message>
     <message>
         <location filename="../qml/PreferencesDialog.qml" line="243" />
         <source>Russian</source>
-        <translation>Русский</translation>
+        <translation>Ruso</translation>
     </message>
     <message>
         <location filename="../qml/PreferencesDialog.qml" line="244" />
         <source>French</source>
-        <translation>Французский</translation>
+        <translation>Francés</translation>
     </message>
     <message>
         <location filename="../qml/PreferencesDialog.qml" line="245" />
         <source>German</source>
-        <translation>Немецкий</translation>
+        <translation>Alemán</translation>
     </message>
     <message>
         <location filename="../qml/PreferencesDialog.qml" line="246" />
         <source>Spanish</source>
-        <translation>Испанский</translation>
+        <translation>Español</translation>
     </message>
     <message>
         <location filename="../qml/PreferencesDialog.qml" line="259" />
         <source>Default File Manager</source>
-        <translation>Файловый менеджер по умолчанию</translation>
+        <translation>Gestor de archivos predeterminado</translation>
     </message>
     <message>
         <location filename="../qml/PreferencesDialog.qml" line="265" />
         <source>Open folders, downloads and Super+Shift+F in Omanta instead of Nautilus. Switch back at any time.</source>
-        <translation>Открывать папки, загрузки и Super+Shift+F в Omanta вместо Nautilus. Можно вернуть обратно в любой момент.</translation>
+        <translation>Abrir carpetas, descargas y Super+Mayús+F en Omanta en lugar de Nautilus. Se puede revertir en cualquier momento.</translation>
     </message>
     <message>
         <location filename="../qml/PreferencesDialog.qml" line="271" />
         <source>Use Omanta as the Default</source>
-        <translation>Использовать Omanta по умолчанию</translation>
+        <translation>Usar Omanta como predeterminado</translation>
     </message>
     <message>
         <location filename="../qml/PreferencesDialog.qml" line="281" />
         <source>Show Switch in Omarchy Toggle Menu</source>
-        <translation>Показывать переключатель в меню Omarchy</translation>
+        <translation>Mostrar el conmutador en el menú de Omarchy</translation>
     </message>
     <message>
         <location filename="../qml/PreferencesDialog.qml" line="289" />
         <source>Optional Context Menu Actions</source>
-        <translation>Дополнительные пункты контекстного меню</translation>
+        <translation>Acciones opcionales del menú contextual</translation>
     </message>
     <message>
         <location filename="../qml/PreferencesDialog.qml" line="291" />
         <source>Show more actions in the menus. Keyboard shortcuts can be used even if the actions are not shown.</source>
-        <translation>Показывать больше действий в меню. Горячие клавиши работают, даже если действия скрыты.</translation>
+        <translation>Mostrar más acciones en los menús. Los atajos funcionan aunque las acciones estén ocultas.</translation>
     </message>
     <message>
         <location filename="../qml/PreferencesDialog.qml" line="295" />
         <source>Create Link</source>
-        <translation>Создать ссылку</translation>
+        <translation>Crear enlace</translation>
     </message>
     <message>
         <location filename="../qml/PreferencesDialog.qml" line="303" />
         <source>Delete Permanently</source>
-        <translation>Удалять навсегда</translation>
+        <translation>Eliminación definitiva</translation>
     </message>
     <message>
         <location filename="../qml/PreferencesDialog.qml" line="310" />
         <source>Performance</source>
-        <translation>Производительность</translation>
+        <translation>Rendimiento</translation>
     </message>
     <message>
         <location filename="../qml/PreferencesDialog.qml" line="312" />
         <source>These features may cause slowdowns and excess network usage, especially when browsing files outside this device, such as on a remote server.</source>
-        <translation>Эти функции могут замедлять работу и создавать лишний сетевой трафик, особенно при просмотре файлов за пределами этого устройства, например на удалённом сервере.</translation>
+        <translation>Estas funciones pueden ralentizar el sistema y generar tráfico de red, sobre todo al explorar archivos fuera de este dispositivo, como en un servidor remoto.</translation>
     </message>
     <message>
         <location filename="../qml/PreferencesDialog.qml" line="316" />
         <source>Search in Subfolders</source>
-        <translation>Поиск во вложенных папках</translation>
+        <translation>Buscar en subcarpetas</translation>
     </message>
     <message>
         <location filename="../qml/PreferencesDialog.qml" line="325" />
         <source>Show Thumbnails</source>
-        <translation>Показывать миниатюры</translation>
+        <translation>Mostrar miniaturas</translation>
     </message>
     <message>
         <location filename="../qml/PreferencesDialog.qml" line="334" />
         <source>Count Number of Files in Folders</source>
-        <translation>Подсчитывать число файлов в папках</translation>
+        <translation>Contar archivos en las carpetas</translation>
     </message>
     <message>
         <location filename="../qml/PreferencesDialog.qml" line="342" />
         <source>Icon View Captions</source>
-        <translation>Подписи в виде значков</translation>
+        <translation>Subtítulos en vista de iconos</translation>
     </message>
     <message>
         <location filename="../qml/PreferencesDialog.qml" line="344" />
         <source>Add information to be displayed beneath file and folder names. More information will appear when zooming closer.</source>
-        <translation>Дополнительная информация под именами файлов и папок. Больше информации при увеличении масштаба.</translation>
+        <translation>Información bajo los nombres de archivos y carpetas. Más información al acercar.</translation>
     </message>
     <message>
         <location filename="../qml/PreferencesDialog.qml" line="348" />
         <source>First</source>
-        <translation>Первая</translation>
+        <translation>Primera</translation>
     </message>
     <message>
         <location filename="../qml/PreferencesDialog.qml" line="357" />
         <source>Second</source>
-        <translation>Вторая</translation>
+        <translation>Segunda</translation>
     </message>
     <message>
         <location filename="../qml/PreferencesDialog.qml" line="366" />
         <source>Third</source>
-        <translation>Третья</translation>
+        <translation>Tercera</translation>
     </message>
     <message>
         <location filename="../qml/PreferencesDialog.qml" line="374" />
         <source>Date and Time Format</source>
-        <translation>Формат даты и времени</translation>
+        <translation>Formato de fecha y hora</translation>
     </message>
     <message>
         <location filename="../qml/PreferencesDialog.qml" line="376" />
         <source>Choose how dates and times are displayed in list and grid views.</source>
-        <translation>Выберите, как показывать дату и время в виде списка и сетки.</translation>
+        <translation>Elija cómo mostrar fecha y hora en las vistas de lista y cuadrícula.</translation>
     </message>
     <message>
         <location filename="../qml/PreferencesDialog.qml" line="394" />
         <source>Simple</source>
-        <translation>Простой</translation>
+        <translation>Simple</translation>
     </message>
     <message>
         <location filename="../qml/PreferencesDialog.qml" line="407" />
         <source>Examples: “Today, 12:33”, “3 days ago”</source>
-        <translation>Примеры: «Сегодня, 12:33», «3 дня назад»</translation>
+        <translation>Ejemplos: «Hoy, 12:33», «hace 3 días»</translation>
     </message>
     <message>
         <location filename="../qml/PreferencesDialog.qml" line="416" />
         <source>Detailed</source>
-        <translation>Подробный</translation>
+        <translation>Detallado</translation>
     </message>
     <message>
         <location filename="../qml/PreferencesDialog.qml" line="429" />
         <source>Examples: “08/08/2026 12:33”, “05/08/2026 12:33”</source>
-        <translation>Примеры: «08.08.2026 12:33», «05.08.2026 12:33»</translation>
+        <translation>Ejemplos: «08/08/2026 12:33», «05/08/2026 12:33»</translation>
     </message>
     <message>
         <location filename="../qml/PreferencesDialog.qml" line="437" />
         <source>Appearance</source>
-        <translation>Внешний вид</translation>
+        <translation>Apariencia</translation>
     </message>
     <message>
         <location filename="../qml/PreferencesDialog.qml" line="439" />
         <source>Window background translucency, like a terminal's background opacity. Text and icons stay solid.</source>
-        <translation>Прозрачность фона окна, как у терминала. Текст и значки остаются непрозрачными.</translation>
+        <translation>Fondo de ventana translúcido, como la opacidad del terminal. El texto y los iconos permanecen opacos.</translation>
     </message>
     <message>
         <location filename="../qml/PreferencesDialog.qml" line="443" />
         <source>Background Opacity</source>
-        <translation>Непрозрачность фона</translation>
+        <translation>Opacidad del fondo</translation>
     </message>
 </context>
 <context>
@@ -1282,179 +1277,179 @@
     <message>
         <location filename="../qml/PropertiesDialog.qml" line="32" />
         <source>Properties</source>
-        <translation>Свойства</translation>
+        <translation>Propiedades</translation>
     </message>
     <message>
         <location filename="../qml/PropertiesDialog.qml" line="94" />
         <source>Close</source>
-        <translation>Закрыть</translation>
+        <translation>Cerrar</translation>
     </message>
     <message>
         <location filename="../qml/PropertiesDialog.qml" line="126" />
         <source>%1 items selected</source>
-        <translation>Выбрано элементов: %1</translation>
+        <translation>%1 elementos seleccionados</translation>
     </message>
     <message>
         <location filename="../qml/PropertiesDialog.qml" line="160" />
         <source>Basic</source>
-        <translation>Основные</translation>
+        <translation>Básico</translation>
     </message>
     <message>
         <location filename="../qml/PropertiesDialog.qml" line="163" />
         <source>Permissions</source>
-        <translation>Права</translation>
+        <translation>Permisos</translation>
     </message>
     <message>
         <location filename="../qml/PropertiesDialog.qml" line="170" />
         <source>Open With</source>
-        <translation>Открыть с помощью</translation>
+        <translation>Abrir con</translation>
     </message>
     <message>
         <location filename="../qml/PropertiesDialog.qml" line="193" />
         <source>Type</source>
-        <translation>Тип</translation>
+        <translation>Tipo</translation>
     </message>
     <message>
         <location filename="../qml/PropertiesDialog.qml" line="204" />
         <source>Link target</source>
-        <translation>Цель ссылки</translation>
+        <translation>Destino del enlace</translation>
     </message>
     <message>
         <location filename="../qml/PropertiesDialog.qml" line="210" />
         <source>Contents</source>
-        <translation>Содержимое</translation>
+        <translation>Contenido</translation>
     </message>
     <message>
         <location filename="../qml/PropertiesDialog.qml" line="210" />
         <source>Size</source>
-        <translation>Размер</translation>
+        <translation>Tamaño</translation>
     </message>
     <message>
         <location filename="../qml/PropertiesDialog.qml" line="221" />
         <source>1 file</source>
-        <translation>1 файл</translation>
+        <translation>1 archivo</translation>
     </message>
     <message>
         <location filename="../qml/PropertiesDialog.qml" line="222" />
         <source>%1 files</source>
-        <translation>Файлов: %1</translation>
+        <translation>%1 archivos</translation>
     </message>
     <message>
         <location filename="../qml/PropertiesDialog.qml" line="224" />
         <source>1 folder</source>
-        <translation>1 папка</translation>
+        <translation>1 carpeta</translation>
     </message>
     <message>
         <location filename="../qml/PropertiesDialog.qml" line="225" />
         <source>%1 folders</source>
-        <translation>Папок: %1</translation>
+        <translation>%1 carpetas</translation>
     </message>
     <message>
         <location filename="../qml/PropertiesDialog.qml" line="231" />
         <source>Size on disk</source>
-        <translation>Размер на диске</translation>
+        <translation>Tamaño en disco</translation>
     </message>
     <message>
         <location filename="../qml/PropertiesDialog.qml" line="237" />
         <source>Location</source>
-        <translation>Расположение</translation>
+        <translation>Ubicación</translation>
     </message>
     <message>
         <location filename="../qml/PropertiesDialog.qml" line="242" />
         <source>Modified</source>
-        <translation>Изменён</translation>
+        <translation>Modificado</translation>
     </message>
     <message>
         <location filename="../qml/PropertiesDialog.qml" line="248" />
         <source>Accessed</source>
-        <translation>Доступ</translation>
+        <translation>Acceso</translation>
     </message>
     <message>
         <location filename="../qml/PropertiesDialog.qml" line="254" />
         <source>Created</source>
-        <translation>Создан</translation>
+        <translation>Creado</translation>
     </message>
     <message>
         <location filename="../qml/PropertiesDialog.qml" line="260" />
         <location filename="../qml/PropertiesDialog.qml" line="311" />
         <source>Owner</source>
-        <translation>Владелец</translation>
+        <translation>Propietario</translation>
     </message>
     <message>
         <location filename="../qml/PropertiesDialog.qml" line="265" />
         <location filename="../qml/PropertiesDialog.qml" line="316" />
         <source>Group</source>
-        <translation>Группа</translation>
+        <translation>Grupo</translation>
     </message>
     <message>
         <location filename="../qml/PropertiesDialog.qml" line="270" />
         <source>Free space</source>
-        <translation>Свободное место</translation>
+        <translation>Espacio libre</translation>
     </message>
     <message>
         <location filename="../qml/PropertiesDialog.qml" line="272" />
         <source>%1 free of %2 (%3)</source>
-        <translation>%1 свободно из %2 (%3)</translation>
+        <translation>%1 libres de %2 (%3)</translation>
     </message>
     <message>
         <location filename="../qml/PropertiesDialog.qml" line="299" />
         <source>Read</source>
-        <translation>Чтение</translation>
+        <translation>Lectura</translation>
     </message>
     <message>
         <location filename="../qml/PropertiesDialog.qml" line="300" />
         <source>Write</source>
-        <translation>Запись</translation>
+        <translation>Escritura</translation>
     </message>
     <message>
         <location filename="../qml/PropertiesDialog.qml" line="303" />
         <source>Enter</source>
-        <translation>Вход</translation>
+        <translation>Entrada</translation>
     </message>
     <message>
         <location filename="../qml/PropertiesDialog.qml" line="303" />
         <source>Execute</source>
-        <translation>Выполнение</translation>
+        <translation>Ejecución</translation>
     </message>
     <message>
         <location filename="../qml/PropertiesDialog.qml" line="321" />
         <source>Others</source>
-        <translation>Остальные</translation>
+        <translation>Otros</translation>
     </message>
     <message>
         <location filename="../qml/PropertiesDialog.qml" line="333" />
         <source>On disk: %1  %2</source>
-        <translation>На диске: %1  %2</translation>
+        <translation>En disco: %1  %2</translation>
     </message>
     <message>
         <location filename="../qml/PropertiesDialog.qml" line="343" />
         <source>Apply</source>
-        <translation>Применить</translation>
+        <translation>Aplicar</translation>
     </message>
     <message>
         <location filename="../qml/PropertiesDialog.qml" line="354" />
         <source>Only the owner of a file can change its permissions.</source>
-        <translation>Только владелец файла может менять его права.</translation>
+        <translation>Solo el propietario de un archivo puede cambiar sus permisos.</translation>
     </message>
     <message>
         <location filename="../qml/PropertiesDialog.qml" line="407" />
         <source>default</source>
-        <translation>по умолчанию</translation>
+        <translation>predeterminado</translation>
     </message>
     <message>
         <location filename="../qml/PropertiesDialog.qml" line="428" />
         <source>No application is registered for this type.</source>
-        <translation>Для этого типа файлов нет зарегистрированного приложения.</translation>
+        <translation>No hay ninguna aplicación registrada para este tipo.</translation>
     </message>
     <message>
         <location filename="../qml/PropertiesDialog.qml" line="438" />
         <source>Set as Default</source>
-        <translation>Сделать по умолчанию</translation>
+        <translation>Establecer como predeterminado</translation>
     </message>
     <message>
         <location filename="../qml/PropertiesDialog.qml" line="451" />
         <source>Open</source>
-        <translation>Открыть</translation>
+        <translation>Abrir</translation>
     </message>
 </context>
 <context>
@@ -1462,208 +1457,208 @@
     <message>
         <location filename="../qml/ShortcutsDialog.qml" line="21" />
         <source>Keyboard Shortcuts</source>
-        <translation>Горячие клавиши</translation>
+        <translation>Atajos de teclado</translation>
     </message>
     <message>
         <location filename="../qml/ShortcutsDialog.qml" line="24" />
         <source>Windows and tabs</source>
-        <translation>Окна и вкладки</translation>
+        <translation>Ventanas y pestañas</translation>
     </message>
     <message>
         <location filename="../qml/ShortcutsDialog.qml" line="25" />
         <source>New window</source>
-        <translation>Новое окно</translation>
+        <translation>Nueva ventana</translation>
     </message>
     <message>
         <location filename="../qml/ShortcutsDialog.qml" line="25" />
         <source>Close window</source>
-        <translation>Закрыть окно</translation>
+        <translation>Cerrar ventana</translation>
     </message>
     <message>
         <location filename="../qml/ShortcutsDialog.qml" line="26" />
         <source>New tab</source>
-        <translation>Новая вкладка</translation>
+        <translation>Nueva pestaña</translation>
     </message>
     <message>
         <location filename="../qml/ShortcutsDialog.qml" line="26" />
         <source>Close tab</source>
-        <translation>Закрыть вкладку</translation>
+        <translation>Cerrar pestaña</translation>
     </message>
     <message>
         <location filename="../qml/ShortcutsDialog.qml" line="27" />
         <source>Next tab</source>
-        <translation>Следующая вкладка</translation>
+        <translation>Pestaña siguiente</translation>
     </message>
     <message>
         <location filename="../qml/ShortcutsDialog.qml" line="27" />
         <source>Previous tab</source>
-        <translation>Предыдущая вкладка</translation>
+        <translation>Pestaña anterior</translation>
     </message>
     <message>
         <location filename="../qml/ShortcutsDialog.qml" line="28" />
         <source>Split view</source>
-        <translation>Разделённый вид</translation>
+        <translation>Vista dividida</translation>
     </message>
     <message>
         <location filename="../qml/ShortcutsDialog.qml" line="28" />
         <source>Switch pane</source>
-        <translation>Переключить панель</translation>
+        <translation>Cambiar de panel</translation>
     </message>
     <message>
         <location filename="../qml/ShortcutsDialog.qml" line="29" />
         <source>Toggle sidebar</source>
-        <translation>Показать/скрыть боковую панель</translation>
+        <translation>Mostrar/ocultar la barra lateral</translation>
     </message>
     <message>
         <location filename="../qml/ShortcutsDialog.qml" line="30" />
         <source>Navigation</source>
-        <translation>Навигация</translation>
+        <translation>Navegación</translation>
     </message>
     <message>
         <location filename="../qml/ShortcutsDialog.qml" line="31" />
         <source>Back / forward</source>
-        <translation>Назад / вперёд</translation>
+        <translation>Atrás / adelante</translation>
     </message>
     <message>
         <location filename="../qml/ShortcutsDialog.qml" line="31" />
         <location filename="../qml/ShortcutsDialog.qml" line="34" />
         <source>Parent folder</source>
-        <translation>Родительская папка</translation>
+        <translation>Carpeta superior</translation>
     </message>
     <message>
         <location filename="../qml/ShortcutsDialog.qml" line="32" />
         <source>Home folder</source>
-        <translation>Домашняя папка</translation>
+        <translation>Carpeta personal</translation>
     </message>
     <message>
         <location filename="../qml/ShortcutsDialog.qml" line="32" />
         <source>Edit the location</source>
-        <translation>Изменить адрес</translation>
+        <translation>Editar la ubicación</translation>
     </message>
     <message>
         <location filename="../qml/ShortcutsDialog.qml" line="33" />
         <source>Open the selection</source>
-        <translation>Открыть выбранное</translation>
+        <translation>Abrir la selección</translation>
     </message>
     <message>
         <location filename="../qml/ShortcutsDialog.qml" line="33" />
         <source>Preview the selected file</source>
-        <translation>Предпросмотр выбранного файла</translation>
+        <translation>Vista previa del archivo seleccionado</translation>
     </message>
     <message>
         <location filename="../qml/ShortcutsDialog.qml" line="35" />
         <source>View</source>
-        <translation>Вид</translation>
+        <translation>Vista</translation>
     </message>
     <message>
         <location filename="../qml/ShortcutsDialog.qml" line="36" />
         <source>List / icon view</source>
-        <translation>Список / значки</translation>
+        <translation>Vista de lista / iconos</translation>
     </message>
     <message>
         <location filename="../qml/ShortcutsDialog.qml" line="36" />
         <source>Show hidden files</source>
-        <translation>Показать скрытые файлы</translation>
+        <translation>Mostrar archivos ocultos</translation>
     </message>
     <message>
         <location filename="../qml/ShortcutsDialog.qml" line="37" />
         <source>Zoom in / out</source>
-        <translation>Приблизить / отдалить</translation>
+        <translation>Acercar / alejar</translation>
     </message>
     <message>
         <location filename="../qml/ShortcutsDialog.qml" line="37" />
         <source>Reset zoom</source>
-        <translation>Сбросить масштаб</translation>
+        <translation>Restablecer zoom</translation>
     </message>
     <message>
         <location filename="../qml/ShortcutsDialog.qml" line="38" />
         <source>Reload</source>
-        <translation>Обновить</translation>
+        <translation>Recargar</translation>
     </message>
     <message>
         <location filename="../qml/ShortcutsDialog.qml" line="39" />
         <source>Search</source>
-        <translation>Поиск</translation>
+        <translation>Buscar</translation>
     </message>
     <message>
         <location filename="../qml/ShortcutsDialog.qml" line="40" />
         <source>Search the current folder</source>
-        <translation>Искать в текущей папке</translation>
+        <translation>Buscar en la carpeta actual</translation>
     </message>
     <message>
         <location filename="../qml/ShortcutsDialog.qml" line="41" />
         <source>Search file contents</source>
-        <translation>Искать в содержимом файлов</translation>
+        <translation>Buscar en el contenido</translation>
     </message>
     <message>
         <location filename="../qml/ShortcutsDialog.qml" line="42" />
         <source>Files</source>
-        <translation>Файлы</translation>
+        <translation>Archivos</translation>
     </message>
     <message>
         <location filename="../qml/ShortcutsDialog.qml" line="43" />
         <source>Copy / cut / paste</source>
-        <translation>Копировать / вырезать / вставить</translation>
+        <translation>Copiar / cortar / pegar</translation>
     </message>
     <message>
         <location filename="../qml/ShortcutsDialog.qml" line="44" />
         <source>Undo</source>
-        <translation>Отменить</translation>
+        <translation>Deshacer</translation>
     </message>
     <message>
         <location filename="../qml/ShortcutsDialog.qml" line="44" />
         <source>Redo</source>
-        <translation>Вернуть</translation>
+        <translation>Rehacer</translation>
     </message>
     <message>
         <location filename="../qml/ShortcutsDialog.qml" line="45" />
         <source>Select all</source>
-        <translation>Выбрать всё</translation>
+        <translation>Seleccionar todo</translation>
     </message>
     <message>
         <location filename="../qml/ShortcutsDialog.qml" line="46" />
         <source>Rename (batch rename on a multi-selection)</source>
-        <translation>Переименовать (пакетное при множественном выборе)</translation>
+        <translation>Renombrar (renombrado por lotes en multiselección)</translation>
     </message>
     <message>
         <location filename="../qml/ShortcutsDialog.qml" line="47" />
         <source>Move to trash</source>
-        <translation>Переместить в корзину</translation>
+        <translation>Mover a la papelera</translation>
     </message>
     <message>
         <location filename="../qml/ShortcutsDialog.qml" line="47" />
         <source>Delete permanently</source>
-        <translation>Удалить навсегда</translation>
+        <translation>Eliminar definitivamente</translation>
     </message>
     <message>
         <location filename="../qml/ShortcutsDialog.qml" line="48" />
         <source>New folder</source>
-        <translation>Новая папка</translation>
+        <translation>Nueva carpeta</translation>
     </message>
     <message>
         <location filename="../qml/ShortcutsDialog.qml" line="48" />
         <source>Bookmark this folder</source>
-        <translation>Добавить папку в закладки</translation>
+        <translation>Añadir esta carpeta a marcadores</translation>
     </message>
     <message>
         <location filename="../qml/ShortcutsDialog.qml" line="49" />
         <source>Properties</source>
-        <translation>Свойства</translation>
+        <translation>Propiedades</translation>
     </message>
     <message>
         <location filename="../qml/ShortcutsDialog.qml" line="50" />
         <source>Application</source>
-        <translation>Приложение</translation>
+        <translation>Aplicación</translation>
     </message>
     <message>
         <location filename="../qml/ShortcutsDialog.qml" line="51" />
         <source>Preferences</source>
-        <translation>Настройки</translation>
+        <translation>Preferencias</translation>
     </message>
     <message>
         <location filename="../qml/ShortcutsDialog.qml" line="51" />
         <source>Keyboard shortcuts</source>
-        <translation>Горячие клавиши</translation>
+        <translation>Atajos de teclado</translation>
     </message>
 </context>
 <context>
@@ -1671,67 +1666,67 @@
     <message>
         <location filename="../qml/Sidebar.qml" line="50" />
         <source>Home</source>
-        <translation>Домашняя</translation>
+        <translation>Personal</translation>
     </message>
     <message>
         <location filename="../qml/Sidebar.qml" line="51" />
         <source>Documents</source>
-        <translation>Документы</translation>
+        <translation>Documentos</translation>
     </message>
     <message>
         <location filename="../qml/Sidebar.qml" line="52" />
         <source>Recent</source>
-        <translation>Недавние</translation>
+        <translation>Recientes</translation>
     </message>
     <message>
         <location filename="../qml/Sidebar.qml" line="53" />
         <source>Starred</source>
-        <translation>Избранное</translation>
+        <translation>Destacados</translation>
     </message>
     <message>
         <location filename="../qml/Sidebar.qml" line="54" />
         <source>Network</source>
-        <translation>Сеть</translation>
+        <translation>Red</translation>
     </message>
     <message>
         <location filename="../qml/Sidebar.qml" line="55" />
         <source>Trash</source>
-        <translation>Корзина</translation>
+        <translation>Papelera</translation>
     </message>
     <message>
         <location filename="../qml/Sidebar.qml" line="314" />
         <source>Operations complete</source>
-        <translation>Операции завершены</translation>
+        <translation>Operaciones completadas</translation>
     </message>
     <message>
         <location filename="../qml/Sidebar.qml" line="356" />
         <source>File operations</source>
-        <translation>Файловые операции</translation>
+        <translation>Operaciones de archivos</translation>
     </message>
     <message>
         <location filename="../qml/Sidebar.qml" line="389" />
         <source>All operations complete</source>
-        <translation>Все операции завершены</translation>
+        <translation>Todas las operaciones completadas</translation>
     </message>
     <message>
         <location filename="../qml/Sidebar.qml" line="411" />
         <source> — waiting</source>
-        <translation> — ожидание</translation>
+        <translation> — en espera</translation>
     </message>
     <message>
         <location filename="../qml/Sidebar.qml" line="495" />
         <source>Open in New Tab</source>
-        <translation>Открыть в новой вкладке</translation>
+        <translation>Abrir en pestaña nueva</translation>
     </message>
     <message>
         <location filename="../qml/Sidebar.qml" line="501" />
         <source>Remove Bookmark</source>
-        <translation>Убрать закладку</translation>
+        <translation>Quitar marcador</translation>
     </message>
     <message>
         <location filename="../qml/Sidebar.qml" line="508" />
         <source>Empty Trash…</source>
-        <translation>Очистить корзину…</translation>
+        <translation>Vaciar la papelera…</translation>
     </message>
 </context>
 <context>
@@ -1739,12 +1734,12 @@
     <message>
         <location filename="../qml/Tab.qml" line="754" />
         <source>No Known Connections</source>
-        <translation>Нет известных подключений</translation>
+        <translation>Sin conexiones conocidas</translation>
     </message>
     <message>
         <location filename="../qml/Tab.qml" line="763" />
         <source>Enter an address to connect to a network location.</source>
-        <translation>Введите адрес для подключения к сетевому расположению.</translation>
+        <translation>Introduzca una dirección para conectar con una ubicación de red.</translation>
     </message>
 </context>
 <context>
@@ -1752,62 +1747,62 @@
     <message>
         <location filename="../qml/VisibleColumnsDialog.qml" line="25" />
         <source>Visible Columns</source>
-        <translation>Видимые столбцы</translation>
+        <translation>Columnas visibles</translation>
     </message>
     <message>
         <location filename="../qml/VisibleColumnsDialog.qml" line="29" />
         <source>Name</source>
-        <translation>Имя</translation>
+        <translation>Nombre</translation>
     </message>
     <message>
         <location filename="../qml/VisibleColumnsDialog.qml" line="29" />
         <source>Size</source>
-        <translation>Размер</translation>
+        <translation>Tamaño</translation>
     </message>
     <message>
         <location filename="../qml/VisibleColumnsDialog.qml" line="29" />
         <source>Type</source>
-        <translation>Тип</translation>
+        <translation>Tipo</translation>
     </message>
     <message>
         <location filename="../qml/VisibleColumnsDialog.qml" line="30" />
         <source>Owner</source>
-        <translation>Владелец</translation>
+        <translation>Propietario</translation>
     </message>
     <message>
         <location filename="../qml/VisibleColumnsDialog.qml" line="30" />
         <source>Group</source>
-        <translation>Группа</translation>
+        <translation>Grupo</translation>
     </message>
     <message>
         <location filename="../qml/VisibleColumnsDialog.qml" line="31" />
         <source>Permissions</source>
-        <translation>Права</translation>
+        <translation>Permisos</translation>
     </message>
     <message>
         <location filename="../qml/VisibleColumnsDialog.qml" line="31" />
         <source>Modified</source>
-        <translation>Изменён</translation>
+        <translation>Modificado</translation>
     </message>
     <message>
         <location filename="../qml/VisibleColumnsDialog.qml" line="32" />
         <source>Created</source>
-        <translation>Создан</translation>
+        <translation>Creado</translation>
     </message>
     <message>
         <location filename="../qml/VisibleColumnsDialog.qml" line="32" />
         <source>Accessed</source>
-        <translation>Доступ</translation>
+        <translation>Acceso</translation>
     </message>
     <message>
         <location filename="../qml/VisibleColumnsDialog.qml" line="108" />
         <source>Move up</source>
-        <translation>Переместить вверх</translation>
+        <translation>Subir</translation>
     </message>
     <message>
         <location filename="../qml/VisibleColumnsDialog.qml" line="118" />
         <source>Move down</source>
-        <translation>Переместить вниз</translation>
+        <translation>Bajar</translation>
     </message>
 </context>
 </TS>

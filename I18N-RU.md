@@ -1,15 +1,16 @@
-# Omanta i18n + Russian locale (ru_RU)
+# Omanta i18n + Russian, French, German and Spanish locales
 
 ## English
 
 This tree is Omanta (file manager for Omarchy) plus Qt Linguist localisation
-support and a complete Russian translation.
+support and four complete translations, added as examples of the workflow.
 
 ### What was added (on top of upstream master)
 
 - `CMakeLists.txt` — `find_package(Qt6 LinguistTools)`,
   `qt_add_translations(TARGETS omanta TS_FILES i18n/omanta_en_US.ts
-  i18n/omanta_ru_RU.ts)`, `.qm` install to `share/omanta/translations/`.
+  i18n/omanta_ru_RU.ts i18n/omanta_fr_FR.ts i18n/omanta_de_DE.ts
+  i18n/omanta_es_ES.ts)`, `.qm` install to `share/omanta/translations/`.
 - `src/LocaleManager.{h,cpp}` (new) — loads `omanta_<locale>.qm` by
   `QLocale::system()` from `/usr/share/omanta/translations`,
   `/usr/local/share/omanta/translations`, then `:/i18n`; stores the override
@@ -17,8 +18,8 @@ support and a complete Russian translation.
 - `src/main.cpp` — creates `LocaleManager` before the QML engine loads and
   exposes it as the `LocaleManager` context property.
 - `qml/PreferencesDialog.qml` — “Interface Language” combo (System default /
-  English / Russian), applies instantly via `engine->retranslate()`, no
-  restart needed.
+  English / Russian / French / German / Spanish), applies instantly via
+  `engine->retranslate()`, no restart needed.
 - `qml/Sidebar.qml` — `displayPlaceName()` maps the stable English row IDs
   (Home, Documents, Recent, Starred, Network, Trash) through `qsTr()`;
   device/mount/bookmark names pass through untranslated (they are
@@ -29,9 +30,15 @@ support and a complete Russian translation.
   with proper plural forms) and the `Home` breadcrumb via `tr()`.
 - `qml/Main.qml` — remaining hardcoded UI strings (header, tooltips,
   context-menu items) wrapped in `qsTr()`.
-- `i18n/omanta_ru_RU.ts` — full Russian translation, 343 source strings.
-- `i18n/omanta_en_US.ts` — American English stub next to it
+- `i18n/omanta_ru_RU.ts` — full Russian translation, 346 source strings.
+- `i18n/omanta_fr_FR.ts` — full French translation, same 346 strings.
+- `i18n/omanta_de_DE.ts` — full German translation, same 346 strings.
+- `i18n/omanta_es_ES.ts` — full Spanish translation, same 346 strings.
+- `i18n/omanta_en_US.ts` — American English stub next to them
   (source == translation).
+- The extra locales are examples: they prove the workflow end to end
+  (mark → `lupdate` → translate → `lrelease` → switch live). Any of them can
+  be dropped or replaced without touching the code.
 
 ### How language switching works
 
@@ -48,13 +55,15 @@ support and a complete Russian translation.
 ```bash
 cmake -B build -DOMANTA_BUILD_TESTS=OFF -DCMAKE_BUILD_TYPE=Release
 cmake --build build -j$(nproc)
-sudo cmake --install build   # binary + omanta_ru_RU.qm / omanta_en_US.qm
+sudo cmake --install build   # binary + omanta_ru_RU.qm / omanta_fr_FR.qm /
+                             # omanta_de_DE.qm / omanta_es_ES.qm / omanta_en_US.qm
 ```
 
 Regenerate translation templates after UI changes:
 
 ```bash
-lupdate qml/ src/ -ts i18n/omanta_ru_RU.ts i18n/omanta_en_US.ts
+lupdate qml/ src/ -ts i18n/omanta_ru_RU.ts i18n/omanta_fr_FR.ts \
+  i18n/omanta_de_DE.ts i18n/omanta_es_ES.ts i18n/omanta_en_US.ts
 ```
 
 ### Note for the upstream author
@@ -68,7 +77,7 @@ the word (see upstream issue 28allday/omanta#25).
 ## Русский
 
 Это дерево — Omanta (файловый менеджер для Omarchy) плюс поддержка
-локализации Qt Linguist и полный русский перевод.
+локализации Qt Linguist и четыре полных перевода, добавленных как примеры.
 
 ### Что добавлено (поверх upstream master)
 
@@ -82,8 +91,8 @@ the word (see upstream issue 28allday/omanta#25).
 - `src/main.cpp` — создаёт `LocaleManager` до загрузки QML и отдаёт его как
   контекст-свойство `LocaleManager`.
 - `qml/PreferencesDialog.qml` — «Язык интерфейса» (Система / English /
-  Русский), применяется мгновенно через `engine->retranslate()`, без
-  перезапуска.
+  Русский / Français / Deutsch / Español), применяется мгновенно через
+  `engine->retranslate()`, без перезапуска.
 - `qml/Sidebar.qml` — `displayPlaceName()` маппит стабильные английские ID
   строк через `qsTr()`; имена устройств и закладок не переводятся (это имена,
   а не интерфейс).
@@ -92,9 +101,15 @@ the word (see upstream issue 28allday/omanta#25).
 - `src/Platform.cpp` — относительные даты и крошка «Домашняя» через `tr()`,
   у `%n days ago` правильные формы множественного числа.
 - `qml/Main.qml` — остатки хардкода обёрнуты в `qsTr()`.
-- `i18n/omanta_ru_RU.ts` — полный русский перевод, 343 строки.
+- `i18n/omanta_ru_RU.ts` — полный русский перевод, 346 строк.
+- `i18n/omanta_fr_FR.ts` — полный французский перевод, те же 346 строк.
+- `i18n/omanta_de_DE.ts` — полный немецкий перевод, те же 346 строк.
+- `i18n/omanta_es_ES.ts` — полный испанский перевод, те же 346 строк.
 - `i18n/omanta_en_US.ts` — американская заглушка рядом
   (source == translation).
+- Лишние локали — примеры: доказывают сквозной процесс (разметка →
+  `lupdate` → перевод → `lrelease` → живое переключение). Любую можно
+  выкинуть или заменить, не трогая код.
 
 ### Как работает переключение языка
 
@@ -110,13 +125,15 @@ the word (see upstream issue 28allday/omanta#25).
 ```bash
 cmake -B build -DOMANTA_BUILD_TESTS=OFF -DCMAKE_BUILD_TYPE=Release
 cmake --build build -j$(nproc)
-sudo cmake --install build   # бинарь + omanta_ru_RU.qm / omanta_en_US.qm
+sudo cmake --install build   # бинарь + omanta_ru_RU.qm / omanta_fr_FR.qm /
+                             # omanta_de_DE.qm / omanta_es_ES.qm / omanta_en_US.qm
 ```
 
 Обновить шаблоны после изменения UI:
 
 ```bash
-lupdate qml/ src/ -ts i18n/omanta_ru_RU.ts i18n/omanta_en_US.ts
+lupdate qml/ src/ -ts i18n/omanta_ru_RU.ts i18n/omanta_fr_FR.ts \
+  i18n/omanta_de_DE.ts i18n/omanta_es_ES.ts i18n/omanta_en_US.ts
 ```
 
 ### Автору апстрима

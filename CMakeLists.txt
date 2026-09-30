@@ -134,10 +134,13 @@ set(OMANTA_LIBRARIES
 
 target_link_libraries(omanta PRIVATE ${OMANTA_LIBRARIES})
 
-# i18n: British English alongside Russian (Qt Linguist).
+# i18n: American English stub alongside Russian, French, German and Spanish (Qt Linguist).
 set(OMANTA_TS_FILES
     i18n/omanta_en_US.ts
     i18n/omanta_ru_RU.ts
+    i18n/omanta_fr_FR.ts
+    i18n/omanta_de_DE.ts
+    i18n/omanta_es_ES.ts
 )
 qt_add_translations(omanta
     TS_FILES ${OMANTA_TS_FILES}

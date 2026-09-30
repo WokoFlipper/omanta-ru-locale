@@ -1129,147 +1129,162 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/PreferencesDialog.qml" line="238"/>
+        <location filename="../qml/PreferencesDialog.qml" line="241"/>
         <source>System default</source>
         <translation type="unfinished">System default</translation>
     </message>
     <message>
-        <location filename="../qml/PreferencesDialog.qml" line="238"/>
+        <location filename="../qml/PreferencesDialog.qml" line="243"/>
         <source>Russian</source>
         <translation type="unfinished">Russian</translation>
     </message>
     <message>
-        <location filename="../qml/PreferencesDialog.qml" line="254"/>
+        <location filename="../qml/PreferencesDialog.qml" line="244"/>
+        <source>French</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/PreferencesDialog.qml" line="245"/>
+        <source>German</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/PreferencesDialog.qml" line="246"/>
+        <source>Spanish</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/PreferencesDialog.qml" line="259"/>
         <source>Default File Manager</source>
         <translation type="unfinished">Default File Manager</translation>
     </message>
     <message>
-        <location filename="../qml/PreferencesDialog.qml" line="260"/>
+        <location filename="../qml/PreferencesDialog.qml" line="265"/>
         <source>Open folders, downloads and Super+Shift+F in Omanta instead of Nautilus. Switch back at any time.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/PreferencesDialog.qml" line="266"/>
+        <location filename="../qml/PreferencesDialog.qml" line="271"/>
         <source>Use Omanta as the Default</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/PreferencesDialog.qml" line="276"/>
+        <location filename="../qml/PreferencesDialog.qml" line="281"/>
         <source>Show Switch in Omarchy Toggle Menu</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/PreferencesDialog.qml" line="284"/>
+        <location filename="../qml/PreferencesDialog.qml" line="289"/>
         <source>Optional Context Menu Actions</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/PreferencesDialog.qml" line="286"/>
+        <location filename="../qml/PreferencesDialog.qml" line="291"/>
         <source>Show more actions in the menus. Keyboard shortcuts can be used even if the actions are not shown.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/PreferencesDialog.qml" line="290"/>
+        <location filename="../qml/PreferencesDialog.qml" line="295"/>
         <source>Create Link</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/PreferencesDialog.qml" line="298"/>
+        <location filename="../qml/PreferencesDialog.qml" line="303"/>
         <source>Delete Permanently</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/PreferencesDialog.qml" line="305"/>
+        <location filename="../qml/PreferencesDialog.qml" line="310"/>
         <source>Performance</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/PreferencesDialog.qml" line="307"/>
+        <location filename="../qml/PreferencesDialog.qml" line="312"/>
         <source>These features may cause slowdowns and excess network usage, especially when browsing files outside this device, such as on a remote server.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/PreferencesDialog.qml" line="311"/>
+        <location filename="../qml/PreferencesDialog.qml" line="316"/>
         <source>Search in Subfolders</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/PreferencesDialog.qml" line="320"/>
+        <location filename="../qml/PreferencesDialog.qml" line="325"/>
         <source>Show Thumbnails</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/PreferencesDialog.qml" line="329"/>
+        <location filename="../qml/PreferencesDialog.qml" line="334"/>
         <source>Count Number of Files in Folders</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/PreferencesDialog.qml" line="337"/>
+        <location filename="../qml/PreferencesDialog.qml" line="342"/>
         <source>Icon View Captions</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/PreferencesDialog.qml" line="339"/>
+        <location filename="../qml/PreferencesDialog.qml" line="344"/>
         <source>Add information to be displayed beneath file and folder names. More information will appear when zooming closer.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/PreferencesDialog.qml" line="343"/>
+        <location filename="../qml/PreferencesDialog.qml" line="348"/>
         <source>First</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/PreferencesDialog.qml" line="352"/>
+        <location filename="../qml/PreferencesDialog.qml" line="357"/>
         <source>Second</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/PreferencesDialog.qml" line="361"/>
+        <location filename="../qml/PreferencesDialog.qml" line="366"/>
         <source>Third</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/PreferencesDialog.qml" line="369"/>
+        <location filename="../qml/PreferencesDialog.qml" line="374"/>
         <source>Date and Time Format</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/PreferencesDialog.qml" line="371"/>
+        <location filename="../qml/PreferencesDialog.qml" line="376"/>
         <source>Choose how dates and times are displayed in list and grid views.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/PreferencesDialog.qml" line="389"/>
+        <location filename="../qml/PreferencesDialog.qml" line="394"/>
         <source>Simple</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/PreferencesDialog.qml" line="402"/>
+        <location filename="../qml/PreferencesDialog.qml" line="407"/>
         <source>Examples: “Today, 12:33”, “3 days ago”</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/PreferencesDialog.qml" line="411"/>
+        <location filename="../qml/PreferencesDialog.qml" line="416"/>
         <source>Detailed</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/PreferencesDialog.qml" line="424"/>
+        <location filename="../qml/PreferencesDialog.qml" line="429"/>
         <source>Examples: “08/08/2026 12:33”, “05/08/2026 12:33”</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/PreferencesDialog.qml" line="432"/>
+        <location filename="../qml/PreferencesDialog.qml" line="437"/>
         <source>Appearance</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/PreferencesDialog.qml" line="434"/>
+        <location filename="../qml/PreferencesDialog.qml" line="439"/>
         <source>Window background translucency, like a terminal&apos;s background opacity. Text and icons stay solid.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/PreferencesDialog.qml" line="438"/>
+        <location filename="../qml/PreferencesDialog.qml" line="443"/>
         <source>Background Opacity</source>
         <translation type="unfinished"></translation>
     </message>

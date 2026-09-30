@@ -235,17 +235,22 @@ Dialog {
                 label: qsTr("Interface Language")
                 PrefComboBox {
                     id: localeCombo
-                    model: [qsTr("System default"), "English", qsTr("Russian")]
+                    textRole: "label"
+                    valueRole: "code"
+                    model: [
+                        { label: qsTr("System default"), code: "" },
+                        { label: "English", code: "en" },
+                        { label: qsTr("Russian"), code: "ru" },
+                        { label: qsTr("French"), code: "fr" },
+                        { label: qsTr("German"), code: "de" },
+                        { label: qsTr("Spanish"), code: "es" }
+                    ]
                     Component.onCompleted: {
                         const saved = LocaleManager.currentLocale
-                        if (saved === "ru") currentIndex = 2
-                        else currentIndex = 0 // "" and "en" both start English
+                        const idx = model.findIndex(function(item) { return item.code === saved })
+                        currentIndex = idx >= 0 ? idx : 0
                     }
-                    onActivated: {
-                        if (currentIndex === 2) LocaleManager.setLocale("ru")
-                        else if (currentIndex === 1) LocaleManager.setLocale("en")
-                        else LocaleManager.setLocale("")
-                    }
+                    onActivated: LocaleManager.setLocale(model[currentIndex].code)
                 }
             }
 
