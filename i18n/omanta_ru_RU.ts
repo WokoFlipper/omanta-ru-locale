@@ -968,10 +968,6 @@
         <translation>Настройки</translation>
     </message>
     <message>
-        <source>Default File Manager</source>
-        <translation type="vanished">Файловый менеджер по умолчанию</translation>
-    </message>
-    <message>
         <location filename="../qml/Main.qml" line="841" />
         <source>Available Protocols</source>
         <translation>Доступные протоколы</translation>
@@ -1077,202 +1073,202 @@
         <translation>Никогда</translation>
     </message>
     <message>
-        <location filename="../qml/PreferencesDialog.qml" line="199" />
+        <location filename="../qml/PreferencesDialog.qml" line="226" />
         <source>General</source>
         <translation>Общие</translation>
     </message>
     <message>
-        <location filename="../qml/PreferencesDialog.qml" line="202" />
+        <location filename="../qml/PreferencesDialog.qml" line="229" />
         <source>Sort Folders Before Files</source>
         <translation>Сначала папки, потом файлы</translation>
     </message>
     <message>
-        <location filename="../qml/PreferencesDialog.qml" line="210" />
+        <location filename="../qml/PreferencesDialog.qml" line="237" />
         <source>Show Hidden Files</source>
         <translation>Показывать скрытые файлы</translation>
     </message>
     <message>
-        <location filename="../qml/PreferencesDialog.qml" line="218" />
+        <location filename="../qml/PreferencesDialog.qml" line="245" />
         <source>Action to Open Items</source>
         <translation>Открытие элементов</translation>
     </message>
     <message>
-        <location filename="../qml/PreferencesDialog.qml" line="221" />
+        <location filename="../qml/PreferencesDialog.qml" line="248" />
         <source>Double-Click</source>
         <translation>Двойной щелчок</translation>
     </message>
     <message>
-        <location filename="../qml/PreferencesDialog.qml" line="221" />
+        <location filename="../qml/PreferencesDialog.qml" line="248" />
         <source>Single-Click</source>
         <translation>Одинарный щелчок</translation>
     </message>
     <message>
-        <location filename="../qml/PreferencesDialog.qml" line="227" />
+        <location filename="../qml/PreferencesDialog.qml" line="254" />
         <source>Expandable Folders in List View</source>
         <translation>Раскрываемые папки в виде списка</translation>
     </message>
     <message>
-        <location filename="../qml/PreferencesDialog.qml" line="235" />
+        <location filename="../qml/PreferencesDialog.qml" line="262" />
         <source>Interface Language</source>
         <translation>Язык интерфейса</translation>
     </message>
     <message>
-        <location filename="../qml/PreferencesDialog.qml" line="241" />
+        <location filename="../qml/PreferencesDialog.qml" line="268" />
         <source>System default</source>
         <translation>Системный по умолчанию</translation>
     </message>
     <message>
-        <location filename="../qml/PreferencesDialog.qml" line="243" />
+        <location filename="../qml/PreferencesDialog.qml" line="270" />
         <source>Russian</source>
         <translation>Русский</translation>
     </message>
     <message>
-        <location filename="../qml/PreferencesDialog.qml" line="244" />
+        <location filename="../qml/PreferencesDialog.qml" line="271" />
         <source>French</source>
         <translation>Французский</translation>
     </message>
     <message>
-        <location filename="../qml/PreferencesDialog.qml" line="245" />
+        <location filename="../qml/PreferencesDialog.qml" line="272" />
         <source>German</source>
         <translation>Немецкий</translation>
     </message>
     <message>
-        <location filename="../qml/PreferencesDialog.qml" line="246" />
+        <location filename="../qml/PreferencesDialog.qml" line="273" />
         <source>Spanish</source>
         <translation>Испанский</translation>
     </message>
     <message>
-        <location filename="../qml/PreferencesDialog.qml" line="259" />
+        <location filename="../qml/PreferencesDialog.qml" line="286" />
         <source>Default File Manager</source>
         <translation>Файловый менеджер по умолчанию</translation>
     </message>
     <message>
-        <location filename="../qml/PreferencesDialog.qml" line="265" />
+        <location filename="../qml/PreferencesDialog.qml" line="292" />
         <source>Open folders, downloads and Super+Shift+F in Omanta instead of Nautilus. Switch back at any time.</source>
         <translation>Открывать папки, загрузки и Super+Shift+F в Omanta вместо Nautilus. Можно вернуть обратно в любой момент.</translation>
     </message>
     <message>
-        <location filename="../qml/PreferencesDialog.qml" line="271" />
+        <location filename="../qml/PreferencesDialog.qml" line="298" />
         <source>Use Omanta as the Default</source>
         <translation>Использовать Omanta по умолчанию</translation>
     </message>
     <message>
-        <location filename="../qml/PreferencesDialog.qml" line="281" />
+        <location filename="../qml/PreferencesDialog.qml" line="308" />
         <source>Show Switch in Omarchy Toggle Menu</source>
         <translation>Показывать переключатель в меню Omarchy</translation>
     </message>
     <message>
-        <location filename="../qml/PreferencesDialog.qml" line="289" />
+        <location filename="../qml/PreferencesDialog.qml" line="316" />
         <source>Optional Context Menu Actions</source>
         <translation>Дополнительные пункты контекстного меню</translation>
     </message>
     <message>
-        <location filename="../qml/PreferencesDialog.qml" line="291" />
+        <location filename="../qml/PreferencesDialog.qml" line="318" />
         <source>Show more actions in the menus. Keyboard shortcuts can be used even if the actions are not shown.</source>
         <translation>Показывать больше действий в меню. Горячие клавиши работают, даже если действия скрыты.</translation>
     </message>
     <message>
-        <location filename="../qml/PreferencesDialog.qml" line="295" />
+        <location filename="../qml/PreferencesDialog.qml" line="322" />
         <source>Create Link</source>
         <translation>Создать ссылку</translation>
     </message>
     <message>
-        <location filename="../qml/PreferencesDialog.qml" line="303" />
+        <location filename="../qml/PreferencesDialog.qml" line="330" />
         <source>Delete Permanently</source>
         <translation>Удалять навсегда</translation>
     </message>
     <message>
-        <location filename="../qml/PreferencesDialog.qml" line="310" />
+        <location filename="../qml/PreferencesDialog.qml" line="337" />
         <source>Performance</source>
         <translation>Производительность</translation>
     </message>
     <message>
-        <location filename="../qml/PreferencesDialog.qml" line="312" />
+        <location filename="../qml/PreferencesDialog.qml" line="339" />
         <source>These features may cause slowdowns and excess network usage, especially when browsing files outside this device, such as on a remote server.</source>
         <translation>Эти функции могут замедлять работу и создавать лишний сетевой трафик, особенно при просмотре файлов за пределами этого устройства, например на удалённом сервере.</translation>
     </message>
     <message>
-        <location filename="../qml/PreferencesDialog.qml" line="316" />
+        <location filename="../qml/PreferencesDialog.qml" line="343" />
         <source>Search in Subfolders</source>
         <translation>Поиск во вложенных папках</translation>
     </message>
     <message>
-        <location filename="../qml/PreferencesDialog.qml" line="325" />
+        <location filename="../qml/PreferencesDialog.qml" line="352" />
         <source>Show Thumbnails</source>
         <translation>Показывать миниатюры</translation>
     </message>
     <message>
-        <location filename="../qml/PreferencesDialog.qml" line="334" />
+        <location filename="../qml/PreferencesDialog.qml" line="361" />
         <source>Count Number of Files in Folders</source>
         <translation>Подсчитывать число файлов в папках</translation>
     </message>
     <message>
-        <location filename="../qml/PreferencesDialog.qml" line="342" />
+        <location filename="../qml/PreferencesDialog.qml" line="369" />
         <source>Icon View Captions</source>
         <translation>Подписи в виде значков</translation>
     </message>
     <message>
-        <location filename="../qml/PreferencesDialog.qml" line="344" />
+        <location filename="../qml/PreferencesDialog.qml" line="371" />
         <source>Add information to be displayed beneath file and folder names. More information will appear when zooming closer.</source>
         <translation>Дополнительная информация под именами файлов и папок. Больше информации при увеличении масштаба.</translation>
     </message>
     <message>
-        <location filename="../qml/PreferencesDialog.qml" line="348" />
+        <location filename="../qml/PreferencesDialog.qml" line="375" />
         <source>First</source>
         <translation>Первая</translation>
     </message>
     <message>
-        <location filename="../qml/PreferencesDialog.qml" line="357" />
+        <location filename="../qml/PreferencesDialog.qml" line="384" />
         <source>Second</source>
         <translation>Вторая</translation>
     </message>
     <message>
-        <location filename="../qml/PreferencesDialog.qml" line="366" />
+        <location filename="../qml/PreferencesDialog.qml" line="393" />
         <source>Third</source>
         <translation>Третья</translation>
     </message>
     <message>
-        <location filename="../qml/PreferencesDialog.qml" line="374" />
+        <location filename="../qml/PreferencesDialog.qml" line="401" />
         <source>Date and Time Format</source>
         <translation>Формат даты и времени</translation>
     </message>
     <message>
-        <location filename="../qml/PreferencesDialog.qml" line="376" />
+        <location filename="../qml/PreferencesDialog.qml" line="403" />
         <source>Choose how dates and times are displayed in list and grid views.</source>
         <translation>Выберите, как показывать дату и время в виде списка и сетки.</translation>
     </message>
     <message>
-        <location filename="../qml/PreferencesDialog.qml" line="394" />
+        <location filename="../qml/PreferencesDialog.qml" line="421" />
         <source>Simple</source>
         <translation>Простой</translation>
     </message>
     <message>
-        <location filename="../qml/PreferencesDialog.qml" line="407" />
+        <location filename="../qml/PreferencesDialog.qml" line="434" />
         <source>Examples: “Today, 12:33”, “3 days ago”</source>
         <translation>Примеры: «Сегодня, 12:33», «3 дня назад»</translation>
     </message>
     <message>
-        <location filename="../qml/PreferencesDialog.qml" line="416" />
+        <location filename="../qml/PreferencesDialog.qml" line="443" />
         <source>Detailed</source>
         <translation>Подробный</translation>
     </message>
     <message>
-        <location filename="../qml/PreferencesDialog.qml" line="429" />
+        <location filename="../qml/PreferencesDialog.qml" line="456" />
         <source>Examples: “08/08/2026 12:33”, “05/08/2026 12:33”</source>
         <translation>Примеры: «08.08.2026 12:33», «05.08.2026 12:33»</translation>
     </message>
     <message>
-        <location filename="../qml/PreferencesDialog.qml" line="437" />
+        <location filename="../qml/PreferencesDialog.qml" line="464" />
         <source>Appearance</source>
         <translation>Внешний вид</translation>
     </message>
     <message>
-        <location filename="../qml/PreferencesDialog.qml" line="439" />
+        <location filename="../qml/PreferencesDialog.qml" line="466" />
         <source>Window background translucency, like a terminal's background opacity. Text and icons stay solid.</source>
         <translation>Прозрачность фона окна, как у терминала. Текст и значки остаются непрозрачными.</translation>
     </message>
     <message>
-        <location filename="../qml/PreferencesDialog.qml" line="443" />
+        <location filename="../qml/PreferencesDialog.qml" line="470" />
         <source>Background Opacity</source>
         <translation>Непрозрачность фона</translation>
     </message>
