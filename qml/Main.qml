@@ -233,7 +233,7 @@ Window {
 
                     ToolbarButton {
                         symbol: "⌕"
-                        tip: "Search (Ctrl+F)"
+                        tip: qsTr("Search (Ctrl+F)")
                         active: root.searchOpen
                         onTriggered: root.searchOpen ? root.closeSearch() : root.openSearch()
                     }
@@ -243,7 +243,7 @@ Window {
                         visible: root.sidebarInline
                         Layout.fillWidth: true
                         horizontalAlignment: Text.AlignHCenter
-                        text: "Files"
+                        text: qsTr("Files")
                         color: Colors.text
                         font.pixelSize: 14
                         font.bold: true
@@ -252,21 +252,21 @@ Window {
                     ToolbarButton {
                         id: menuButton
                         symbol: "≡"
-                        tip: "Main menu"
+                        tip: qsTr("Main menu")
                         onTriggered: mainMenu.popup(menuButton, 0, menuButton.height)
                     }
                 }
 
                 ToolbarButton {
                     symbol: "←"
-                    tip: "Back (Alt+Left)"
+                    tip: qsTr("Back (Alt+Left)")
                     enabled: root.currentTab && root.currentTab.history.canGoBack
                     onTriggered: root.currentTab.goBack()
                 }
 
                 ToolbarButton {
                     symbol: "→"
-                    tip: "Forward (Alt+Right)"
+                    tip: qsTr("Forward (Alt+Right)")
                     enabled: root.currentTab && root.currentTab.history.canGoForward
                     onTriggered: root.currentTab.goForward()
                 }
@@ -524,7 +524,7 @@ Window {
                     // lines for list. "▦" was a crosshatch mess at 15px.
                     glyph: root.currentTab && root.currentTab.viewMode === "list" ? "view-grid" : ""
                     symbol: "☰"
-                    tip: "Switch view (Ctrl+1 / Ctrl+2)"
+                    tip: qsTr("Switch view (Ctrl+1 / Ctrl+2)")
                     onTriggered: {
                         if (root.currentTab)
                             root.setViewMode(root.currentTab.viewMode === "list" ? "icon" : "list");

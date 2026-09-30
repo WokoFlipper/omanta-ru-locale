@@ -1,5 +1,6 @@
 #include "Location.h"
 
+#include <QCoreApplication>
 #include <QDir>
 #include <QFileInfo>
 #include <QUrl>
@@ -9,18 +10,21 @@ namespace Location {
 namespace {
 
 // The roots GIO gives friendly virtual filesystems. Keys are schemes.
+// Labels go through QCoreApplication::translate so they live in the locale
+// files (context "Location") and survive app updates; the schemes used for
+// matching elsewhere stay untouched.
 QString rootLabel(const QString &scheme)
 {
     if (scheme == QLatin1String("trash"))
-        return QStringLiteral("Trash");
+        return QCoreApplication::translate("Location", "Trash");
     if (scheme == QLatin1String("starred"))
-        return QStringLiteral("Starred");
+        return QCoreApplication::translate("Location", "Starred");
     if (scheme == QLatin1String("recent"))
-        return QStringLiteral("Recent");
+        return QCoreApplication::translate("Location", "Recent");
     if (scheme == QLatin1String("network"))
-        return QStringLiteral("Network");
+        return QCoreApplication::translate("Location", "Network");
     if (scheme == QLatin1String("computer"))
-        return QStringLiteral("Computer");
+        return QCoreApplication::translate("Location", "Computer");
     return {};
 }
 

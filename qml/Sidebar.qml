@@ -39,6 +39,24 @@ Rectangle {
             places.addBookmark(location);
     }
 
+    // Display names for the fixed rows. The model keeps stable English IDs
+    // (Nautilus's own: Home, Recent, …) so matching, drops and sections keep
+    // working in any language; only what the eye sees is translated here, so
+    // the translation lives in the locale files and survives app updates.
+    // Device, mount and bookmark names fall through untranslated — correct,
+    // they are user/system names, not UI vocabulary.
+    function displayPlaceName(id) {
+        switch (id) {
+        case "Home": return qsTr("Home")
+        case "Documents": return qsTr("Documents")
+        case "Recent": return qsTr("Recent")
+        case "Starred": return qsTr("Starred")
+        case "Network": return qsTr("Network")
+        case "Trash": return qsTr("Trash")
+        default: return id
+        }
+    }
+
     implicitWidth: 200
     color: Colors.chrome
 
@@ -151,7 +169,7 @@ Rectangle {
                 anchors.right: ejectButton.visible ? ejectButton.left : parent.right
                 anchors.rightMargin: 6
                 anchors.verticalCenter: parent.verticalCenter
-                text: row.name
+                text: root.displayPlaceName(row.name)
                 color: row.current ? Colors.selectionText : row.mountable ? Colors.textDim : Colors.text
                 font.pixelSize: 13
                 elide: Text.ElideRight

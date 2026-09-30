@@ -7,6 +7,7 @@
 #include "Application.h"
 #include "DBusAdaptors.h"
 #include "IconImageProvider.h"
+#include "LocaleManager.h"
 #include "Platform.h"
 #include "SystemTheme.h"
 #include "ThumbnailProvider.h"
@@ -122,6 +123,9 @@ int main(int argc, char *argv[])
     QQmlApplicationEngine engine;
     engine.addImageProvider(QStringLiteral("fileicon"), new IconImageProvider);
     engine.addImageProvider(QStringLiteral("thumbnail"), new ThumbnailProvider);
+
+    LocaleManager localeManager(&engine);
+    engine.rootContext()->setContextProperty(QStringLiteral("LocaleManager"), &localeManager);
 
 
     Application application(&engine);

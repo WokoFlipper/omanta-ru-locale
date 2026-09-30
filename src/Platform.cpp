@@ -150,12 +150,12 @@ QString Platform::formatModified(const QDateTime &when, const QString &format) c
     // Simple, Nautilus-style: today gets a time, the last week is relative,
     // this year gets a day and month, anything older gets the year too.
     if (when.date() == now.date())
-        return QStringLiteral("Today, %1").arg(locale.toString(when.time(), QLocale::ShortFormat));
+        return tr("Today, %1").arg(locale.toString(when.time(), QLocale::ShortFormat));
     const qint64 daysAgo = when.date().daysTo(now.date());
     if (daysAgo == 1)
-        return QStringLiteral("Yesterday");
+        return tr("Yesterday");
     if (daysAgo > 1 && daysAgo < 7)
-        return QStringLiteral("%1 days ago").arg(daysAgo);
+        return tr("%n days ago", "", int(daysAgo));
     if (when.date().year() == now.date().year())
         return locale.toString(when.date(), QStringLiteral("d MMM"));
     return locale.toString(when.date(), QStringLiteral("d MMM yyyy"));
@@ -364,7 +364,7 @@ QVariantList Platform::pathCrumbs(const QString &path) const
     // which is what keeps the breadcrumb readable in the common case.
     QString remainder = path;
     if (path == home || path.startsWith(home + QLatin1Char('/'))) {
-        crumbs.append(QVariantMap{ { QStringLiteral("label"), QStringLiteral("Home") },
+        crumbs.append(QVariantMap{ { QStringLiteral("label"), tr("Home") },
                                    { QStringLiteral("path"), home } });
         walked = home;
         remainder = path.mid(home.length());

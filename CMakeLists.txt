@@ -4,7 +4,7 @@ project(omanta VERSION 0.1.20 LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-find_package(Qt6 6.5 REQUIRED COMPONENTS Core Gui Quick QuickControls2 DBus Svg)
+find_package(Qt6 6.5 REQUIRED COMPONENTS Core Gui Quick QuickControls2 DBus Svg LinguistTools)
 find_package(PkgConfig REQUIRED)
 pkg_check_modules(GIO REQUIRED IMPORTED_TARGET gio-2.0)
 pkg_check_modules(LIBARCHIVE REQUIRED IMPORTED_TARGET libarchive)
@@ -44,6 +44,8 @@ set(OMANTA_SOURCES
     src/IconImageProvider.h
     src/Location.cpp
     src/Location.h
+    src/LocaleManager.cpp
+    src/LocaleManager.h
     src/Mounter.cpp
     src/Mounter.h
     src/NavigationHistory.cpp
@@ -131,6 +133,17 @@ set(OMANTA_LIBRARIES
 )
 
 target_link_libraries(omanta PRIVATE ${OMANTA_LIBRARIES})
+
+# i18n: British English alongside Russian (Qt Linguist).
+set(OMANTA_TS_FILES
+    i18n/omanta_en_US.ts
+    i18n/omanta_ru_RU.ts
+)
+qt_add_translations(omanta
+    TS_FILES ${OMANTA_TS_FILES}
+    QM_FILES_OUTPUT_VARIABLE OMANTA_QM_FILES
+)
+install(FILES ${OMANTA_QM_FILES} DESTINATION share/omanta/translations)
 
 option(OMANTA_BUILD_TESTS "Build the model test suite" ON)
 if(OMANTA_BUILD_TESTS AND EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/tests/CMakeLists.txt")

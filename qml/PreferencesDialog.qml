@@ -231,6 +231,24 @@ Dialog {
                 }
             }
 
+            PrefRow {
+                label: qsTr("Interface Language")
+                PrefComboBox {
+                    id: localeCombo
+                    model: [qsTr("System default"), "English", qsTr("Russian")]
+                    Component.onCompleted: {
+                        const saved = LocaleManager.currentLocale
+                        if (saved === "ru") currentIndex = 2
+                        else currentIndex = 0 // "" and "en" both start English
+                    }
+                    onActivated: {
+                        if (currentIndex === 2) LocaleManager.setLocale("ru")
+                        else if (currentIndex === 1) LocaleManager.setLocale("en")
+                        else LocaleManager.setLocale("")
+                    }
+                }
+            }
+
             SectionTitle {
                 visible: DefaultFileManager.available
                 text: qsTr("Default File Manager")
