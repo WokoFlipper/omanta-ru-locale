@@ -129,7 +129,7 @@ Window {
     // a translucent base under translucent chrome would stack the
     // backgroundOpacity alpha twice in the chrome areas.
     color: "transparent"
-    title: currentTab ? currentTab.title + " — Files" : "Files"
+    title: currentTab ? currentTab.title + " — " + qsTr("Files") : qsTr("Files")
 
     // Quick Controls (menus, dialogs, fields, scrollbars) paint from the
     // palette. Without this they wear the style's stock grey and look like
@@ -535,14 +535,14 @@ Window {
                     id: viewOptionsButton
                     symbol: "▼"
                     symbolSize: 12
-                    tip: "View options"
+                    tip: qsTr("View options")
                     onTriggered: viewOptionsMenu.popup(viewOptionsButton, 0, viewOptionsButton.height)
                 }
 
                 ToolbarButton {
                     symbol: "✕"
                     symbolSize: 13
-                    tip: "Close window (Ctrl+Shift+W)"
+                    tip: qsTr("Close window (Ctrl+Shift+W)")
                     onTriggered: root.close()
                 }
             }
@@ -787,7 +787,7 @@ Window {
                     id: protocolsButton
 
                     symbol: "ⓘ"
-                    tip: "Available protocols"
+                    tip: qsTr("Available protocols")
                     onTriggered: protocolsPopover.opened ? protocolsPopover.close()
                                                         : protocolsPopover.open()
 
@@ -1526,14 +1526,14 @@ Window {
 
                 ToolbarButton {
                     symbol: "−"
-                    tip: "Zoom out (Ctrl+-)"
+                    tip: qsTr("Zoom out (Ctrl+-)")
                     enabled: root.currentTab && root.currentTab.zoom > root.currentTab.minimumZoom
                     onTriggered: root.currentTab.zoomOut()
                 }
 
                 ToolbarButton {
                     symbol: "+"
-                    tip: "Zoom in (Ctrl++)"
+                    tip: qsTr("Zoom in (Ctrl++)")
                     enabled: root.currentTab && root.currentTab.zoom < root.currentTab.maximumZoom
                     onTriggered: root.currentTab.zoomIn()
                 }
@@ -1783,7 +1783,7 @@ Window {
         }
 
         MenuItem {
-            text: "Open"
+            text: qsTr("Open")
             enabled: root.currentTab && root.currentTab.selectionCount > 0
             onTriggered: root.currentTab.activate(root.currentTab.currentIndex)
         }
@@ -1797,7 +1797,7 @@ Window {
         MenuSeparator {}
 
         MenuItem {
-            text: "Open in Terminal"
+            text: qsTr("Open in Terminal")
             // A terminal needs a working directory; the sampled terminalDir
             // is empty when there is nowhere local to land (trash://, an
             // unresolved remote view).
@@ -1806,7 +1806,7 @@ Window {
         }
 
         MenuItem {
-            text: "Open in New Tab"
+            text: qsTr("Open in New Tab")
             enabled: root.currentTab && root.currentTab.selectionCount === 1
             onTriggered: {
                 const selected = root.currentTab.selectedPaths();
@@ -1966,12 +1966,12 @@ Window {
         MenuSeparator {}
 
         MenuItem {
-            text: root.currentTab && root.currentTab.showHidden ? "Hide Hidden Files" : "Show Hidden Files"
+            text: root.currentTab && root.currentTab.showHidden ? qsTr("Hide Hidden Files") : qsTr("Show Hidden Files")
             onTriggered: root.currentTab.showHidden = !root.currentTab.showHidden
         }
 
         MenuItem {
-            text: "Reload"
+            text: qsTr("Reload")
             onTriggered: root.currentTab.reload()
         }
 

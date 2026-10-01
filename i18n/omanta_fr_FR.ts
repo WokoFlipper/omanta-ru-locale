@@ -417,6 +417,8 @@
         <translation>Rechercher (Ctrl+F)</translation>
     </message>
     <message>
+        <location filename="../qml/Main.qml" line="132" />
+        <location filename="../qml/Main.qml" line="132" />
         <location filename="../qml/Main.qml" line="246" />
         <source>Files</source>
         <translation>Fichiers</translation>
@@ -583,6 +585,16 @@
         <translation>Changer de vue (Ctrl+1 / Ctrl+2)</translation>
     </message>
     <message>
+        <location filename="../qml/Main.qml" line="538" />
+        <source>View options</source>
+        <translation>Options d'affichage</translation>
+    </message>
+    <message>
+        <location filename="../qml/Main.qml" line="545" />
+        <source>Close window (Ctrl+Shift+W)</source>
+        <translation>Fermer la fenêtre (Ctrl+Shift+W)</translation>
+    </message>
+    <message>
         <location filename="../qml/Main.qml" line="679" />
         <source>Could not mount “%1”: %2</source>
         <translation>Impossible de monter “%1” : %2</translation>
@@ -601,6 +613,11 @@
         <location filename="../qml/Main.qml" line="781" />
         <source>Connect</source>
         <translation>Se connecter</translation>
+    </message>
+    <message>
+        <location filename="../qml/Main.qml" line="790" />
+        <source>Available protocols</source>
+        <translation>Protocoles disponibles</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="810" />
@@ -800,6 +817,16 @@
         <translation>Taille des icônes</translation>
     </message>
     <message>
+        <location filename="../qml/Main.qml" line="1529" />
+        <source>Zoom out (Ctrl+-)</source>
+        <translation>Zoom arrière (Ctrl+-)</translation>
+    </message>
+    <message>
+        <location filename="../qml/Main.qml" line="1536" />
+        <source>Zoom in (Ctrl++)</source>
+        <translation>Zoom avant (Ctrl++)</translation>
+    </message>
+    <message>
         <location filename="../qml/Main.qml" line="1545" />
         <source>Sort</source>
         <translation>Trier</translation>
@@ -836,6 +863,7 @@
     </message>
     <message>
         <location filename="../qml/Main.qml" line="1605" />
+        <location filename="../qml/Main.qml" line="1969" />
         <source>Show Hidden Files</source>
         <translation>Afficher les fichiers cachés</translation>
     </message>
@@ -856,6 +884,7 @@
     </message>
     <message>
         <location filename="../qml/Main.qml" line="1664" />
+        <location filename="../qml/Main.qml" line="1974" />
         <source>Reload</source>
         <translation>Recharger</translation>
     </message>
@@ -893,9 +922,24 @@
         <translation>Nouveau document</translation>
     </message>
     <message>
+        <location filename="../qml/Main.qml" line="1786" />
+        <source>Open</source>
+        <translation>Ouvrir</translation>
+    </message>
+    <message>
         <location filename="../qml/Main.qml" line="1792" />
         <source>Preview</source>
         <translation>Aperçu</translation>
+    </message>
+    <message>
+        <location filename="../qml/Main.qml" line="1800" />
+        <source>Open in Terminal</source>
+        <translation>Ouvrir dans un terminal</translation>
+    </message>
+    <message>
+        <location filename="../qml/Main.qml" line="1809" />
+        <source>Open in New Tab</source>
+        <translation>Ouvrir dans un nouvel onglet</translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="1819" />
@@ -976,6 +1020,11 @@
         <location filename="../qml/Main.qml" line="1949" />
         <source>Delete Permanently…</source>
         <translation>Supprimer définitivement…</translation>
+    </message>
+    <message>
+        <location filename="../qml/Main.qml" line="1969" />
+        <source>Hide Hidden Files</source>
+        <translation>Masquer les fichiers cachés</translation>
     </message>
 </context>
 <context>

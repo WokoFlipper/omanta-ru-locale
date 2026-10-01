@@ -279,7 +279,7 @@ Item {
                                 anchors.verticalCenter: parent.verticalCenter
                                 text: row.displayName
                                 color: root.tab.isSelected(row.name) ? Colors.selectionText : Colors.text
-                                font.pixelSize: 13
+                                font.pixelSize: 16
                                 elide: Text.ElideRight
                                 width: Math.max(0, Math.min(implicitWidth,
                                                 nameCell.width - root.iconSize - 8

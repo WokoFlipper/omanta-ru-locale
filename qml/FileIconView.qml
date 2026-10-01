@@ -176,7 +176,7 @@ Item {
                     horizontalAlignment: Text.AlignHCenter
                     text: cell.displayName
                     color: root.tab.isSelected(cell.name) ? Colors.selectionText : Colors.text
-                    font.pixelSize: 12
+                    font.pixelSize: 16
                     elide: Text.ElideRight
                     maximumLineCount: 2
                     wrapMode: Text.Wrap
@@ -194,7 +194,7 @@ Item {
                         horizontalAlignment: Text.AlignHCenter
                         text: root.captionText(modelData, cell)
                         color: root.tab.isSelected(cell.name) ? Colors.selectionText : Colors.textDim
-                        font.pixelSize: 10
+                        font.pixelSize: 12
                         elide: Text.ElideMiddle
                     }
                 }
@@ -231,7 +231,7 @@ Item {
                     horizontalAlignment: Text.AlignHCenter
                     text: cell.displayName
                     color: Colors.selectionText
-                    font.pixelSize: 12
+                    font.pixelSize: 16
                     wrapMode: Text.WrapAtWordBoundaryOrAnywhere
                 }
             }

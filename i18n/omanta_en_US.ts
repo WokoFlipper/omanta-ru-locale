@@ -418,6 +418,8 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../qml/Main.qml" line="132"/>
+        <location filename="../qml/Main.qml" line="132"/>
         <location filename="../qml/Main.qml" line="246"/>
         <source>Files</source>
         <translation type="unfinished"></translation>
@@ -584,6 +586,16 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../qml/Main.qml" line="538"/>
+        <source>View options</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Main.qml" line="545"/>
+        <source>Close window (Ctrl+Shift+W)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../qml/Main.qml" line="679"/>
         <source>Could not mount “%1”: %2</source>
         <translation type="unfinished"></translation>
@@ -602,6 +614,11 @@
         <location filename="../qml/Main.qml" line="781"/>
         <source>Connect</source>
         <translation>Connect</translation>
+    </message>
+    <message>
+        <location filename="../qml/Main.qml" line="790"/>
+        <source>Available protocols</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/Main.qml" line="810"/>
@@ -796,6 +813,16 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../qml/Main.qml" line="1529"/>
+        <source>Zoom out (Ctrl+-)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Main.qml" line="1536"/>
+        <source>Zoom in (Ctrl++)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../qml/Main.qml" line="1545"/>
         <source>Sort</source>
         <translation type="unfinished"></translation>
@@ -832,6 +859,7 @@
     </message>
     <message>
         <location filename="../qml/Main.qml" line="1605"/>
+        <location filename="../qml/Main.qml" line="1969"/>
         <source>Show Hidden Files</source>
         <translation>Show Hidden Files</translation>
     </message>
@@ -852,6 +880,7 @@
     </message>
     <message>
         <location filename="../qml/Main.qml" line="1664"/>
+        <location filename="../qml/Main.qml" line="1974"/>
         <source>Reload</source>
         <translation type="unfinished"></translation>
     </message>
@@ -889,8 +918,23 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../qml/Main.qml" line="1786"/>
+        <source>Open</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../qml/Main.qml" line="1792"/>
         <source>Preview</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Main.qml" line="1800"/>
+        <source>Open in Terminal</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Main.qml" line="1809"/>
+        <source>Open in New Tab</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -971,6 +1015,11 @@
     <message>
         <location filename="../qml/Main.qml" line="1949"/>
         <source>Delete Permanently…</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/Main.qml" line="1969"/>
+        <source>Hide Hidden Files</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
