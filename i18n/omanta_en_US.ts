@@ -1183,24 +1183,8 @@
         <translation type="unfinished">System default</translation>
     </message>
     <message>
-        <location filename="../qml/PreferencesDialog.qml" line="270"/>
         <source>Russian</source>
-        <translation type="unfinished">Russian</translation>
-    </message>
-    <message>
-        <location filename="../qml/PreferencesDialog.qml" line="271"/>
-        <source>French</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../qml/PreferencesDialog.qml" line="272"/>
-        <source>German</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../qml/PreferencesDialog.qml" line="273"/>
-        <source>Spanish</source>
-        <translation type="unfinished"></translation>
+        <translation type="obsolete">Russian</translation>
     </message>
     <message>
         <location filename="../qml/PreferencesDialog.qml" line="286"/>

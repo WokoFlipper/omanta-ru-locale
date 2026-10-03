@@ -267,10 +267,10 @@ Dialog {
                     model: [
                         { label: qsTr("System default"), code: "" },
                         { label: "English", code: "en" },
-                        { label: qsTr("Russian"), code: "ru" },
-                        { label: qsTr("French"), code: "fr" },
-                        { label: qsTr("German"), code: "de" },
-                        { label: qsTr("Spanish"), code: "es" }
+                        { label: "Русский", code: "ru" },
+                        { label: "Français", code: "fr" },
+                        { label: "Deutsch", code: "de" },
+                        { label: "Español", code: "es" }
                     ]
                     Component.onCompleted: {
                         const saved = LocaleManager.currentLocale
