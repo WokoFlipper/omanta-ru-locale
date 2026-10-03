@@ -1,6 +1,7 @@
 #include "IconImageProvider.h"
 
 #include <QIcon>
+#include <QFileInfo>
 #include <QPainter>
 #include <QSvgRenderer>
 #include <QUrl>
@@ -192,25 +193,59 @@ QPixmap IconImageProvider::requestPixmap(const QString &id, QSize *size, const Q
 {
     const int edge = requestedSize.width() > 0 ? requestedSize.width() : kDefaultSize;
 
-    // A user-assigned picture (metadata::custom-icon file URI): load straight
-    // from disk instead of resolving theme names. Anything else flows into
-    // the themed/glyph path below.
-    const QString idPath = id.startsWith(QLatin1String("file://")) ? QUrl(id).toLocalFile() : id;
-    if (idPath.startsWith(QLatin1Char('/'))) {
-        QPixmap pixmap(idPath);
-        if (!pixmap.isNull()) {
-            pixmap = pixmap.scaled(QSize(edge, edge), Qt::KeepAspectRatio,
-                                   Qt::SmoothTransformation);
+    const qsizetype queryStart = id.indexOf(QLatin1Char('?'));
+    const QUrlQuery query(queryStart < 0 ? QString() : id.mid(queryStart + 1));
+    const QString bare = queryStart < 0 ? id : id.left(queryStart);
+
+    // A user-assigned picture (metadata::custom-icon file URI): keep the
+    // folder silhouette in the requested tint and draw the picture as a
+    // centred emblem, so the row stays recognisable as a folder on every
+    // theme. Plain files keep the picture alone.
+    if (bare.startsWith(QLatin1String("file://")) || bare.startsWith(QLatin1Char('/'))) {
+        const QString localPath =
+            bare.startsWith(QLatin1String("file://")) ? QUrl(bare).toLocalFile() : bare;
+        QPixmap emblem(localPath);
+        if (!emblem.isNull()) {
+            const QString colorHex = query.queryItemValue(QStringLiteral("c"));
+            const QString cacheKey = QStringLiteral("custom|") + localPath + QLatin1Char('|')
+                                     + colorHex + QLatin1Char('|') + QString::number(edge);
+            {
+                QMutexLocker locker(&m_mutex);
+                const auto hit = m_cache.constFind(cacheKey);
+                if (hit != m_cache.constEnd()) {
+                    if (size)
+                        *size = hit->size();
+                    return hit.value();
+                }
+            }
+            QPixmap out;
+            if (QFileInfo(localPath).isDir()) {
+                out = glyphPixmap(QStringLiteral("folder"),
+                                  colorHex.isEmpty() ? QStringLiteral("808080") : colorHex,
+                                  edge, true, edge >= 24);
+                QPainter painter(&out);
+                painter.setRenderHint(QPainter::SmoothPixmapTransform);
+                const int emblemEdge = int(edge * 0.62);
+                const QPixmap scaled =
+                    emblem.scaled(emblemEdge, emblemEdge, Qt::KeepAspectRatio,
+                                  Qt::SmoothTransformation);
+                painter.drawPixmap((edge - scaled.width()) / 2,
+                                   (edge - scaled.height()) / 2, scaled);
+                painter.end();
+            } else {
+                out = emblem.scaled(QSize(edge, edge), Qt::KeepAspectRatio,
+                                    Qt::SmoothTransformation);
+            }
+            QMutexLocker locker(&m_mutex);
+            m_cache.insert(cacheKey, out);
             if (size)
-                *size = pixmap.size();
-            return pixmap;
+                *size = out.size();
+            return out;
         }
         // Missing/unreadable file: fall through to themed rendering rather
         // than an empty square, so a moved picture never blanks the row.
     }
 
-    const qsizetype queryStart = id.indexOf(QLatin1Char('?'));
-    const QUrlQuery query(queryStart < 0 ? QString() : id.mid(queryStart + 1));
     QPixmap pixmap = !query.hasQueryItem(QStringLiteral("c"))
         ? themedPixmap(id, edge)
         : glyphPixmap(id.left(queryStart), query.queryItemValue(QStringLiteral("c")), edge,

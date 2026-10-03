@@ -350,6 +350,28 @@ QList<PlacesModel::Place> PlacesModel::bookmarksSection() const
 
 QString PlacesModel::bookmarkIcon(const QString &location) const
 {
+    // A user-assigned picture (metadata::custom-icon) wins over everything:
+    // the sidebar then matches the folder's emblem in the file views.
+    // Local directories only — one cheap synchronous query per bookmark row.
+    GFile *dir = Location::make(location);
+    if (dir && g_file_is_native(dir)) {
+        GError *error = nullptr;
+        GFileInfo *info = g_file_query_info(dir, "metadata::custom-icon",
+                                            G_FILE_QUERY_INFO_NONE, nullptr, &error);
+        g_clear_error(&error);
+        if (info) {
+            char **custom = g_file_info_get_attribute_stringv(info, "metadata::custom-icon");
+            QString uri = (custom && custom[0]) ? QString::fromUtf8(custom[0]) : QString();
+            g_object_unref(info);
+            if (!uri.isEmpty()) {
+                g_object_unref(dir);
+                return uri;
+            }
+        }
+    }
+    if (dir)
+        g_object_unref(dir);
+
     // Nautilus draws each bookmark with its target's icon, so a Downloads
     // bookmark gets the download glyph and a Music one the note — matched by
     // comparing against the XDG special dirs rather than stat'ing anything.
