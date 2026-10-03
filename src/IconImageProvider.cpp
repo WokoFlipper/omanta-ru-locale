@@ -3,6 +3,7 @@
 #include <QIcon>
 #include <QPainter>
 #include <QSvgRenderer>
+#include <QUrl>
 #include <QUrlQuery>
 
 namespace {
@@ -190,6 +191,23 @@ IconImageProvider::IconImageProvider()
 QPixmap IconImageProvider::requestPixmap(const QString &id, QSize *size, const QSize &requestedSize)
 {
     const int edge = requestedSize.width() > 0 ? requestedSize.width() : kDefaultSize;
+
+    // A user-assigned picture (metadata::custom-icon file URI): load straight
+    // from disk instead of resolving theme names. Anything else flows into
+    // the themed/glyph path below.
+    const QString idPath = id.startsWith(QLatin1String("file://")) ? QUrl(id).toLocalFile() : id;
+    if (idPath.startsWith(QLatin1Char('/'))) {
+        QPixmap pixmap(idPath);
+        if (!pixmap.isNull()) {
+            pixmap = pixmap.scaled(QSize(edge, edge), Qt::KeepAspectRatio,
+                                   Qt::SmoothTransformation);
+            if (size)
+                *size = pixmap.size();
+            return pixmap;
+        }
+        // Missing/unreadable file: fall through to themed rendering rather
+        // than an empty square, so a moved picture never blanks the row.
+    }
 
     const qsizetype queryStart = id.indexOf(QLatin1Char('?'));
     const QUrlQuery query(queryStart < 0 ? QString() : id.mid(queryStart + 1));

@@ -47,7 +47,8 @@ const char *FileEntry::queryAttributes()
            G_FILE_ATTRIBUTE_OWNER_GROUP ","
            G_FILE_ATTRIBUTE_UNIX_MODE ","
            G_FILE_ATTRIBUTE_TRASH_ORIG_PATH ","
-           G_FILE_ATTRIBUTE_STANDARD_TARGET_URI;
+           G_FILE_ATTRIBUTE_STANDARD_TARGET_URI ","
+           "metadata::custom-icon";
 }
 
 FileEntry FileEntry::fromInfo(GFileInfo *info)
@@ -161,6 +162,16 @@ FileEntry FileEntry::fromInfo(GFileInfo *info)
     if (entry.iconNames.isEmpty())
         entry.iconNames.append(entry.isDir ? QStringLiteral("folder")
                                            : QStringLiteral("text-x-generic"));
+
+    // A user-assigned per-folder picture (Properties in Nautilus, or
+    // `gio set ... metadata::custom-icon`). The attribute is a string array
+    // owned by the GFileInfo — copy the first entry out, do NOT free it.
+    // Read here so the icon provider can honour it without an extra round
+    // trip per row.
+    if (char **custom = g_file_info_get_attribute_stringv(info, "metadata::custom-icon")) {
+        if (custom[0])
+            entry.customIcon = QString::fromUtf8(custom[0]);
+    }
 
     return entry;
 }

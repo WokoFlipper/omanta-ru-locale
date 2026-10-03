@@ -83,6 +83,10 @@ QVariant DirectoryModel::data(const QModelIndex &index, int role) const
     case ContentTypeRole: return entry.contentType;
     case TypeDescriptionRole: return entry.typeDescription;
     case IconSourceRole:
+        // A user-assigned picture wins over themed candidates; the provider
+        // loads file:// ids straight from disk (see IconImageProvider).
+        if (!entry.customIcon.isEmpty())
+            return QStringLiteral("image://fileicon/") + entry.customIcon;
         // The provider takes the whole candidate list and falls back through it.
         return QStringLiteral("image://fileicon/") + entry.iconNames.join(QLatin1Char(','));
     case OrigPathRole: return entry.origPath;

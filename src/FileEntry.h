@@ -27,6 +27,8 @@ struct FileEntry
     QString contentType;  // MIME type, e.g. "text/plain"
     QString typeDescription;
     QStringList iconNames; // themed icon candidates, best first
+    QString customIcon; // metadata::custom-icon file URI (Nautilus-compatible
+                        // per-folder icon); empty when not assigned
     QString origPath;     // trash::orig-path — set only for rows in trash:///
     QString targetPath;   // standard::target-uri as a local path (or URI when
                           // not local) — set for rows in recent:/// and other
