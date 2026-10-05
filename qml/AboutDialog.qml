@@ -31,10 +31,9 @@ Dialog {
         Text {
             textFormat: Text.PlainText
             anchors.horizontalCenter: parent.horizontalCenter
-            text: qsTr("File Manager (Fork Omanta)")
+            text: qsTr("File Manager")
             color: Colors.text
             font.pixelSize: 20
-            font.bold: true
         }
 
         Text {

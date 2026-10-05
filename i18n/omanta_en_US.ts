@@ -5,11 +5,11 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../qml/AboutDialog.qml" line="34"/>
-        <source>File Manager (Fork Omanta)</source>
+        <source>File Manager</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/AboutDialog.qml" line="51"/>
+        <location filename="../qml/AboutDialog.qml" line="50"/>
         <source>A native file manager for Omarchy.</source>
         <translation type="unfinished"></translation>
     </message>

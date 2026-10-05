@@ -7,12 +7,16 @@
         <translation type="vanished">Файлы</translation>
     </message>
     <message>
-        <location filename="../qml/AboutDialog.qml" line="34" />
         <source>File Manager (Fork Omanta)</source>
-        <translation>Файловый менеджер (форк Omanta)</translation>
+        <translation type="vanished">Файловый менеджер (форк Omanta)</translation>
     </message>
     <message>
-        <location filename="../qml/AboutDialog.qml" line="51" />
+        <location filename="../qml/AboutDialog.qml" line="34" />
+        <source>File Manager</source>
+        <translation>Файловый менеджер</translation>
+    </message>
+    <message>
+        <location filename="../qml/AboutDialog.qml" line="50" />
         <source>A native file manager for Omarchy.</source>
         <translation>Нативный файловый менеджер для Omarchy.</translation>
     </message>
