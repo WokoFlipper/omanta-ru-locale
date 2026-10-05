@@ -289,13 +289,13 @@ Dialog {
                 visible: DefaultFileManager.available
                 text: DefaultFileManager.lastError !== ""
                       ? DefaultFileManager.lastError
-                      : qsTr("Open folders, downloads and Super+Shift+F in Omanta instead of Nautilus. Switch back at any time.")
+                       : qsTr("Open folders, downloads and Super+Shift+F in File Manager instead of Nautilus. Switch back at any time.")
                 color: DefaultFileManager.lastError !== "" ? Colors.error : Colors.textDim
             }
 
             PrefRow {
                 visible: DefaultFileManager.available
-                label: qsTr("Use Omanta as the Default")
+                label: qsTr("Use File Manager as the Default")
                 PrefSwitch {
                     id: defaultSwitch
                     enabled: DefaultFileManager.known && !DefaultFileManager.busy

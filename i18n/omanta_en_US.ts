@@ -5,7 +5,7 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../qml/AboutDialog.qml" line="34"/>
-        <source>Files</source>
+        <source>File Manager (Fork Omanta)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1193,12 +1193,12 @@
     </message>
     <message>
         <location filename="../qml/PreferencesDialog.qml" line="292"/>
-        <source>Open folders, downloads and Super+Shift+F in Omanta instead of Nautilus. Switch back at any time.</source>
+        <source>Open folders, downloads and Super+Shift+F in File Manager instead of Nautilus. Switch back at any time.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/PreferencesDialog.qml" line="298"/>
-        <source>Use Omanta as the Default</source>
+        <source>Use File Manager as the Default</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
